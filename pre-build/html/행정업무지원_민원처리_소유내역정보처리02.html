@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">민원처리</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="민원처리"><span>민원처리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="소유내역정보처리">
+                                    <span>소유내역정보처리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="안심상속">
+                                    <span>안심상속</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료제공관리">
+                                    <span>자료제공관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="온라인 조상땅 승인">
+                                    <span>온라인 조상땅 승인</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                    <li class="link">
+                        <a href="#" title="소유내역정보처리"><span>소유내역정보처리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="전산자료제공">
+                                    <span>전산자료제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="인터넷자료제공승인">
+                                    <span>인터넷자료제공승인</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="토지변동현황제공">
+                                    <span>토지변동현황제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료제공관리">
+                                    <span>자료제공관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-전송이력조회">
+                                    <span>전자결재관리-전송이력조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-공문서식관리">
+                                    <span>전자결재관리-공문서식관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">소유자명 중복검사</h3>
+                    <!-- titArea -->
+                    <div class="titArea">
+                        <div class="total">
+                            <p>전체
+                                <strong class="blue">500<span>건</span></strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //titArea -->
+                    <!-- table -->
+                    <div class="table result">
+                        <table>
+                            <caption>소유내역정보처리 테이블</caption>
+                            <colgroup>
+                                <col style="width: 70px;"/>
+                                <col style="width: 60px;"/>
+                                <col style="width: 120px;"/>
+                                <col style="width: 270px"/>
+                                <col style="width: 120px;"/>
+                                <col style="width: 90px;"/>
+                                <col style="width: 120px;"/>
+                                <col style="width: 120px;"/>
+                                <col style="width: auto;"/>
+                                <col style="width: 120px"/>
+                                <col style="width: 120px;"/>
+                                <col style="width: 60px;"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01">
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">순번</th>
+                                    <th scope="col">성명</th>
+                                    <th scope="col">토지소재</th>
+                                    <th scope="col">지번</th>
+                                    <th scope="col">지목</th>
+                                    <th scope="col">면적(㎡)</th>
+                                    <th scope="col">소유구분</th>
+                                    <th scope="col">소유자주소</th>
+                                    <th scope="col">변동일자</th>
+                                    <th scope="col">변동원인</th>
+                                    <th scope="col">구분</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk02">
+                                            <label for="chk02"></label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>노연희</td>
+                                    <td>서울특별시 용산구 한남동</td>
+                                    <td>557·64</td>
+                                    <td>대</td>
+                                    <td>3</td>
+                                    <td>개인</td>
+                                    <td>서울 용산구 한남동 55-3</td>
+                                    <td>1967-11-09</td>
+                                    <td>소유권이전</td>
+                                    <td>본</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk03">
+                                            <label for="chk03"></label>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>노연희</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>4</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <!-- lower -->
+                    <div class="lower">
+                        <button type="button" class="btn line2">
+                            <i class="ico print lt"></i>
+                            <span>출력</span>
+                        </button>
+                        <p class="desc blue">※출력은 참고를 위한 전체 리스트 출력입니다. 민원발급은 해당 리스트 체크 후 저장을 통해 하실 수 있습니다.</p>
+                    </div>
+                    <!-- //lower -->
+                    <div class="btnArea">
+                        <button type="button" class="btn sky lg">
+                            <span>구토지대장조회</span>
+                        </button>
+                        <button type="button" class="btn blueLine lg">
+                            <span>초기화면</span>
+                        </button>
+                        <button type="button" class="btn blue lg">
+                            <span>저장</span>
+                        </button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

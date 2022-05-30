@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">지적전산자료이용</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="지적전산자료이용"><span>지적전산자료이용</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="전산자료제공">
+                                    <span>전산자료제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="인터넷자료제공승인">
+                                    <span>인터넷자료제공승인</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="토지변동현황제공">
+                                    <span>토지변동현황제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료제공관리">
+                                    <span>자료제공관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-전송이력조회">
+                                    <span>전자결재관리-전송이력조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-공문서식관리">
+                                    <span>전자결재관리-공문서식관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="전자결재관리"><span>전자결재관리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">공문서식관리</h2>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 213px;">
+                                <col style="width: 213px;">
+                                <col style="width: 213px;">
+                                <col style="width: 213px;">
+                                <col style="width: 213px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tr>
+                                <th scope="row">
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <label for="s01" class="redDot">
+                                        기관분류
+                                    </label>
+                                    <!-- // -->
+                                </th>
+                                <td class="txt-left">
+                                    <select id="s01" style="width: 100%;">
+                                        <option>공공기관</option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <label for="s02" class="redDot">
+                                        문서구분
+                                    </label>
+                                    <!-- // -->
+                                </th>
+                                <td class="txt-left">
+                                    <select id="s02" style="width: 100%;">
+                                        <option>대내</option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <label for="i01" class="redDot">
+                                        상세기관
+                                    </label>
+                                    <!-- // -->
+                                </th>
+                                <td class="txt-left">
+                                    <div class="pos-r">
+                                        <input type="text" id="i01" value="농림수산업자신용보증기관" style="width: 265px;">
+                                        <button type="button" class="btnInputSearch" style="left: 226px;">
+                                            <span class="hidden">검색</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <label for="i02" class="redDot">
+                                        제목
+                                    </label>
+                                    <!-- // -->
+                                </th>
+                                <td colspan="5" class="txt-left">
+                                    <input type="text" id="i02" value="지적전산자료제공 검토 (농림수산업자신용보증기금)" style="width: 100%;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <label for="s03" class="redDot">
+                                        과제카드명
+                                    </label>
+                                    <!-- // -->
+                                </th>
+                                <td colspan="5" class="txt-left">
+                                    <select id="s03" style="width: 338px;">
+                                        <option>부동산 정책정보 심사 · 승인 및 제공</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="t01">문서요지</label>
+                                </th>
+                                <td colspan="5">
+                                    <!-- 10-02 수정 : textarea -->
+                                    <!-- 10-02 수정 : textarea -->
+                                    <!-- 10-02 수정 : textarea -->
+                                    <textarea id="t01" class="cScroll" style="width: 100%; height: 145px;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="3">
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <!-- 10-05 추가요청사항 수정 : label -->
+                                    <label for="sg01" class="redDot">보고경로(구분)</label>
+                                    <!-- // -->
+                                </th>
+                                <td colspan="5">
+                                    <div class="flex ac">
+                                        <div class="inputBox">
+                                            <select id="sg01" style="width: 195px;">
+                                                <option>기안</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputBox">
+                                            <label for="sg02">성명</label>
+                                            <input type="text" id="sg02"  value="장정하" style="width:186px;">
+                                        </div>
+                                        <div class="inputBox">
+                                            <label for="sg03">직위</label>
+                                            <input type="text" id="sg03" value="행정주사" style="width:186px;">
+                                        </div>
+                                        <div class="pos-r flex ac">
+                                            <button type="button" class="btnInputSearch" style="right: 5px;">
+                                                <span class="hidden">검색</span>
+                                            </button>
+                                        </div>
+                                        <!-- <div class="boxList">
+                                            <div class="head">
+                                                <select id="sg01" class="type02" style="width: 83px;">
+                                                    <option>기안</option>
+                                                </select>
+                                            </div>
+                                            <div class="cont">
+                                                <span>행정주사보</span>
+                                                <span class="name">장정하</span>
+                                                <button type="button" class="btnInputSearch">
+                                                    <span class="hidden">검색</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="boxList">
+                                            <div class="head">
+                                                <select id="sg02" class="type02" style="width: 83px;">
+                                                    <option>검토</option>
+                                                </select>
+                                            </div>
+                                            <div class="cont">
+                                                <span>행정사무관</span>
+                                                <span class="name">이순애</span>
+                                                <button type="button" class="btnInputSearch">
+                                                    <span class="hidden">검색</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="boxList">
+                                            <div class="head">
+                                                <select id="sg03" class="type02" style="width: 83px;">
+                                                    <option>전결</option>
+                                                </select>
+                                            </div>
+                                            <div class="cont">
+                                                <span>기술서기관</span>
+                                                <span class="name">임헌량</span>
+                                                <button type="button" class="btnInputSearch">
+                                                    <span class="hidden">검색</span>
+                                                </button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="flex ac">
+                                        <div class="inputBox">
+                                            <select id="sg04" style="width: 195px;">
+                                                <option>검토</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputBox">
+                                            <label for="sg02">성명</label>
+                                            <input type="text" id="sg05"  value="이순애" style="width:186px;">
+                                        </div>
+                                        <div class="inputBox">
+                                            <label for="sg06">직위</label>
+                                            <input type="text" id="sg06" value="행정사무관" style="width:186px;">
+                                        </div>
+                                        <div class="flex ac">
+                                            <button type="button" class="btnSearchDef">
+                                                <span class="hidden">검색</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="flex ac">
+                                        <div class="inputBox">
+                                            <select id="sg07" style="width: 195px;">
+                                                <option>전결</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputBox">
+                                            <label for="sg08">성명</label>
+                                            <input type="text" id="sg08"  value="임헌량" style="width:186px;">
+                                        </div>
+                                        <div class="inputBox">
+                                            <label for="sg09">직위</label>
+                                            <input type="text" id="sg09" value="기술서기관" style="width:186px;">
+                                        </div>
+                                        <div class="flex ac">
+                                            <button type="button" class="btnSearchDef">
+                                                <span class="hidden">검색</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">본문 추가사항</th>
+                                <td colspan="5">
+                                    <!-- 10-08 수정 : chkList span width -->
+                                    <!-- 10-08 수정 : chkList span width -->
+                                    <!-- 10-08 수정 : chkList span width -->
+                                    <!-- chkList -->
+                                    <div class="chkList">
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01">
+                                            <label for="chk01">
+                                                <span class="redDot rt">시행번호</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox" style="margin-left: 20px;">
+                                            <input type="checkbox" id="chk02">
+                                            <label for="chk02">
+                                                <span>제공목적</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk03">
+                                            <label for="chk03">
+                                                <span>본문기재사항</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk04">
+                                            <label for="chk04">
+                                                <span>활용목적</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk05">
+                                            <label for="chk05">
+                                                <span>요청자료</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk06">
+                                            <label for="chk06">
+                                                <span>제공자료</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk07">
+                                            <label for="chk07">
+                                                <span>대상지역</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk08">
+                                            <label for="chk08">
+                                                <span>제공예정일</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk09">
+                                            <label for="chk09">
+                                                <span>제공방법</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk10">
+                                            <label for="chk10">
+                                                <span>정보이용수수료</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk11">
+                                            <label for="chk11">
+                                                <span>회신기한</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk12">
+                                            <label for="chk12">
+                                                <span>정보이용주의사항</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk13">
+                                            <label for="chk13">
+                                                <span>행정사항</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                        <!-- chcekbox -->
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk14">
+                                            <label for="chk14">
+                                                <span>행정사항</span>
+                                            </label>
+                                        </div>
+                                        <!-- //chckbox -->
+                                    </div>
+                                    <!-- //chkList -->
+                                    
+                                </td>
+                            </tr>
+
+                            <!-- 10-12 수정 : 테이블 수정 -->
+                            <!-- 10-12 수정 : 테이블 수정 -->
+                            <!-- 10-12 수정 : 테이블 수정 -->
+                            <tr>
+                                <th scope="row">본문</th>
+                                <!-- td -->
+                                <td colspan="5">
+                                    <!-- table -->
+                                    <table>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i03">시행번호</label>
+                                            </th>
+                                            <td colspan="5">
+                                                <div class="row">
+                                                    <input type="text" id="i03" value="시행번호-001" style="width: 195px;">
+                                                    <p>호와 관련된 문서입니다.</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i04">제공목적</label>
+                                            </th>
+                                            <td colspan="5">
+                                                <input type="text" id="i04" style="width: 100%;" value="ㅇㅇ의 'ㅇㅇㅇㅇㅇ' 업무와 관련하여 요청한 지적전산정보에 대하여 붙임과 같이 검토한 결과, 자료제공 승인하고자 합니다.">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="t02">본문기재사항</label>
+                                            </th>
+                                            <td colspan="5">
+                                                <textarea id="t02" class="cScroll" style="width: 100%; height: 85px;"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i05">활용목적</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" id="i05" value="체납처분(샘플)" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i06">요청자료</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" id="i06" value="100건(샘플)" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i07">요청대상</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" id="i07" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i08">제공자료</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" value="100필지(샘플)" id="i08" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i09">대상지역</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" value="전국(샘플)" id="i09" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="c01">제공예상일</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" class="cal" id="c01" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i10">제공방법</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" id="i10" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i11">정보이용수수료</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" value="1,000원(샘플)" id="i11" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i12">회신기한</label>
+                                            </th>
+                                            <td colspan="5" class="txt-left">
+                                                <div class="row">
+                                                    <input type="text" value="1,000원(샘플)" id="i12" style="width:195px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- //table -->
+                                </td>
+                                <!-- //td -->
+                            </tr>
+                            <!-- // -->
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="btnArea">
+                        <button type="button" class="btn grey lg">
+                            <span>취소</span>
+                        </button>
+                        <button type="button" class="btn blueLine lg">
+                            <span>수정</span>
+                        </button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

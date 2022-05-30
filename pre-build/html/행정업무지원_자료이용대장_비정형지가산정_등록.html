@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">자료이용대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="자료이용대장"><span>자료이용대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="자료이용대장현황조회">
+                                    <span>자료이용대장현황조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료이용통계">
+                                    <span>자료이용통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="비정형/지가산정자료제공">
+                                    <span>비정형지가산정자료제공</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="비정형/지가산정 자료제공"><span>비정형/지가산정 자료제공</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">비정형/지가산정 등록</h3>
+                    <!-- tabWrap -->
+                    <div class="tabWrap type01">
+                        <!-- tabNav -->
+                        <div class="tabNav">
+                            <!-- tabList -->
+                            <ul class="tabList">
+                                <li class="active">
+                                    <a href="#">지가산정자료추출</a>
+                                </li>
+                                <li>
+                                    <a href="#">오프라인정책정보제공기록</a>
+                                </li>
+                            </ul>
+                            <!-- //tabList -->
+                        </div>
+                        <!-- //tabNav -->
+                        <!-- tabCont -->
+                        <div class="tabCont active">
+                            <!-- sec -->
+                            <section class="sec">
+                                <h2 class="titSec">기본정보</h3>
+                                    <!-- table -->
+                                    <div class="table">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width: 213px;">
+                                                <col style="width: 620px;">
+                                                <col style="width: 213px;">
+                                                <col style="width: auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label class="redDot">
+                                                            작업구분
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td colspan="3" class="txt-left">
+                                                        <!-- radioGroup -->
+                                                        <div class="radioGroup">
+                                                            <div class="radio">
+                                                                <input type="radio" id="r01" name="rd">
+                                                                <label for="r01">
+                                                                    <span>지가변동률</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" id="r02" name="rd">
+                                                                <label for="r02">
+                                                                    <span>표준공시지가</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <!-- //radioGroup -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label for="i01" class="redDot">
+                                                            공문서번호
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td colspan="3" class="txt-left">
+                                                        <input type="text" id="i01" style="width: 638px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label for="i02" class="redDot">
+                                                            접수일자
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td class="txt-left">
+                                                        <input type="text" id="i02" value="2021-08-13" style="width: 195px;">
+                                                    </td>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label for="i03" class="redDot">
+                                                            작업일자
+                                                        </label>
+                                                    </th>
+                                                    <td class="txt-left">
+                                                        <input type="text" id="i03" value="2021-08-13" style="width: 195px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label class="redDot">
+                                                            기관구분
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td colspan="3" class="txt-left">
+                                                        <!-- radioGroup -->
+                                                        <div class="radioGroup">
+                                                            <div class="radio">
+                                                                <input type="radio" id="r03" name="rd">
+                                                                <label for="r03">
+                                                                    <span>국가</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" id="r04" name="rd">
+                                                                <label for="r04">
+                                                                    <span>지방자치단체</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" id="r05" name="rd">
+                                                                <label for="r05">
+                                                                    <span>공공단체</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" id="r06" name="rd">
+                                                                <label for="r06">
+                                                                    <span>기타</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <!-- //radioGroup -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label for="i04" class="redDot">
+                                                            신청기관
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td colspan="3" class="txt-left">
+                                                        <div class="pos-r">
+                                                            <input type="text" id="i04" style="width: 195px;">
+                                                            <button type="button" class="btnInputSearch" style="left: 155px;">
+                                                                <span class="hidden">검색</span>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+
+                                    <h2 class="titSec">상세정보</h2>
+                                    <!-- table -->
+                                    <div class="table">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width: 213px;">
+                                                <col style="width: 620px;">
+                                                <col style="width: 213px;">
+                                                <col style="width: auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label for="s01" class="redDot">
+                                                            목적 및 근거
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td class="txt-left">
+                                                        <select id="s01" style="width: 195px;">
+                                                            <option>선택</option>
+                                                        </select>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label for="s02" class="redDot">
+                                                            사용료 구분
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td class="txt-left">
+                                                        <select id="s02" style="width: 195px;">
+                                                            <option>선택</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="i05">비고</label>
+                                                    </th>
+                                                    <td colspan="3" class="txt-left">
+                                                        <input type="text" id="i05" style="width: 630px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <!-- 10-05 추가사항요청 수정 : label -->
+                                                        <label for="f01" class="redDot">
+                                                            첨부파일
+                                                        </label>
+                                                        <!-- // -->
+                                                    </th>
+                                                    <td colspan="3">
+                                                        <!-- fileContainer -->
+                                                        <div class="fileContainer">
+                                                            <div class="fileBox cScroll" style="width:41.8%; height: 86px;">
+                                                                
+                                                            </div>
+                                                            <div class="btnArea">
+                                                                <div class="fileArea">
+                                                                    <input type="file" id="f01" class="hidden">
+                                                                    <label for="f01" class="btn grey">파일첨부</label>
+                                                                </div>
+                                                                <button type="button" class="btn grey2">
+                                                                    <span>삭제</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- //filContainer -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+
+                                    <div class="btnArea">
+                                        <button type="button" class="btn grey lg">
+                                            <span>목록</span>
+                                        </button>
+                                        <button type="button" class="btn blue lg">
+                                            <span>등록</span>
+                                        </button>
+                                    </div>
+                            </section>
+                            <!-- //sec -->
+                        </div>
+                        <!-- //tabCont -->
+
+                        <!-- tabCont -->
+                        <div class="tabCont">
+                            <section class="sec">
+                                오프라인정책정보제공기록
+                            </section>
+                        </div>
+                        <!-- //tabCont -->
+                    </div>
+                    <!-- //tabWrap -->
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

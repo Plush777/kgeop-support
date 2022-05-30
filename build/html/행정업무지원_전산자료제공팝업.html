@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../css/common.css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+<title>행정업무지원</title>
+</head>
+<body>
+<div id="wrap">
+    <!--header-->
+<header id="header" class="clearFix">
+  <h1>
+    <img src="../images/common/logo_white.png" class="mainLogo" alt="공간정보드림">
+    <img src="../images/common/logo2.png" class="adminLogo" alt="행정업무지원"/>
+  </h1>
+  <div class="util">
+    <a href="/" class="member off" title="로그인"><span class="btnname">로그인</span></a>
+    <div class="member on" title="로그아웃">
+      <span class="btnname">로그아웃</span>
+      <ul class="userInfo">
+        <li class="infoName">
+          <a href="#">국토교통부 000 팀<br/>
+            <b>홍길동님</b>
+          </a>
+        </li>
+        <li class="infoMypage">
+          <a href="#" title="마이페이지">마이페이지</a>
+        </li>
+        <li class="logOut">
+          <a href="#" title="로그아웃">로그아웃</a>
+        </li>
+      </ul>
+    </div>
+    <a href="/" class="memberJoin" title="회원가입"><span class="btnname">회원가입</span></a>
+    <!--<a href="/" class="btnSystem" title="시스템소개 다운로드"><span class="btnname">시스템다운로드</span></a>-->
+    <button type="button" class="btnSearchOpen" title="통합검색"><span class="btnname">검색창 열기</span></button>
+    <button type="button" class="btnSitemap" title="다운로드"><span class="btnname">사이트맵</span></button>
+  </div>
+  <!--inner-->
+  <div class="inner pos-r clearFix">
+    <h2 class="hidden">주요 메뉴 영역</h2>
+
+    <!--gnb-->
+    <div class="gnb">
+      <ul class="menu">
+        <li>
+          <a href="/">민원처리</a>
+          <!--<div class="dep2" style="display: none;">
+              <ul>
+                  <li><a href="/">시스템 로그 관리</a></li>
+                  <li><a href="/">장애관리</a></li>
+                  <li><a href="/">사용자 접속 통계</a></li>
+                  <li><a href="/">메뉴/기능별 통계</a></li>
+                  <li><a href="/">테이블 사용 통계</a></li>
+              </ul>
+          </div>-->
+        </li>
+        <li><a href="/">지적전산자료</a></li>
+        <li><a href="/">자료이용대장</a></li>
+        <li><a href="/">구토지대장</a></li>
+        <li><a href="/">비법인관리</a></li>
+        <li><a href="/">적부심사</a></li>
+      </ul>
+    </div>
+    <!--//gnb-->
+  </div>
+  <!--//inner-->
+  <!--searchContain-->
+  <div class="searchContain">
+    <!--inner-->
+    <div class="inner">
+      <button type="button" class="btnSearchClose"><span class="hidden">검색창 닫기</span></button>
+      <div class="inputArea">
+        <input type="text" placeholder="검색을 원하시는 데이터 명을 입력하세요."/>
+        <button type="button" class="btnSearch"><span class="hidden">검색</span></button>
+        <dl class="searchWordWrap clearFix">
+          <dt>
+            인기검색어
+          </dt>
+          <dd>
+            <a href="#">인기검색어</a>
+          </dd>
+          <dd>
+            <a href="#">인기검색어</a>
+          </dd>
+          <dd>
+            <a href="#">인기검색어</a>
+          </dd>
+          <dd>
+            <a href="#">인기검색어</a>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!--//inner-->
+  </div>
+  <!--//searchContain-->
+  <!--sitemap-->
+  <div class="siteMap">
+    <h1>
+      <img src="../images/common/logo_white.png" alt="[국토교통부]언제 어디서나 모든이에게 K-Geo플랫폼"/>
+    </h1>
+    <div class="inner">
+      <button type="button" class="btnSiteMapClose"><span class="hidden">닫기</span></button>
+      <ul class="siteMpaList clearFix">
+        <li>
+          <a href="#">지도드림</a>
+
+        <li>
+          <a href="#">3D활용</a>
+        </li>
+        <li>
+          <a href="#">모두드림</a>
+          <ul>
+            <li>
+              <a href="#">데이터검색</a>
+            </li>
+            <li>
+              <a href="#">분류체계별 검색</a>
+            </li>
+            <li>
+              <a href="#">유형별 검색</a>
+            </li>
+            <li>
+              <a href="#">이용안내</a>
+              <ul>
+                <li>
+                  <a href="#">소개</a>
+                </li>
+                <li>
+                  <a href="#">이용가이드</a>
+                </li>
+                <li>
+                  <a href="#">이용정책</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">통계드림</a>
+          <ul>
+            <li>
+              <a href="#">토지통계</a>
+            </li>
+            <li>
+              <a href="#">건축물통계</a>
+            </li>
+            <li>
+              <a href="#">가격통계</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">맵갤러리</a>
+        </li>
+        <li>
+          <a href="#">고객지원</a>
+          <ul>
+            <li>
+              <a href="#">게시판</a>
+              <ul>
+                <li>
+                  <a href="#">공지사항</a>
+                </li>
+                <li>
+                  <a href="#">자료실</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">질의응답</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">기준정보</a>
+            </li>
+            <li>
+              <a href="#">법령정보</a>
+            </li>
+            <li>
+              <a href="#">홍보자료</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--//sitemap-->
+  <!--bgMenu-->
+  <div class="bgMenu"></div>
+  <!--//bgMenu-->
+</header>
+<!--//header-->
+
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">지적전산자료이용</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="민원처리"><span>지적전산자료이용</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <!--
+                        <ul class="dep">
+                            <li>
+                                <span>선택</span>
+                            </li>
+                            <li>
+                                <span>선택</span>
+                            </li>
+                        </ul>
+                        -->
+                    </li>
+                    <li>
+                        <a href="#" title="소유내역정보처리"><span>전산자료제공</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <!--
+                        <ul class="dep">
+                            <li>
+                                <span>선택</span>
+                            </li>
+                            <li>
+                                <span>선택</span>
+                            </li>
+                        </ul>
+                        -->
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <!--titArea-->
+                    <div class="titArea">
+                        <h2 class="titSec">신청자 정보</h2>
+                    </div>
+                    <!--//titArea-->
+                    <!-- accordionBox -->
+                    <div class="accordionBox active">
+                        <button type="button" class="btnAccordionToggle">
+                            <span class="hidden">보이기/숨기기</span>
+                        </button>
+                        <!-- inner -->
+                        <div class="inner">
+                            <!-- dateArea -->
+                            <div class="dateArea">
+                                <div class="flex">
+                                    <p>작업번호 1313</p>
+                                    <p>신청일자 2021-08-12</p>
+                                </div>
+                            </div>
+                            <!-- //dateArea -->
+                            <!-- table -->
+                            <div class="table">
+                                <table>
+                                    <caption>신청자 정보 테이블</caption>
+                                    <colgroup>
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i01">접수번호</label>
+                                            </th>
+                                            <td>
+                                                <input type="text" id="i01">
+                                            </td>
+                                            <th scope="row">
+                                                <label for="c01">접수일자</label>
+                                            </th>
+                                            <td>
+                                                <input type="text" id="c01" class="cal">
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i02">공문번호</label>
+                                            </th>
+                                            <td class="txt-left">
+                                                <input type="text" id="i02" style="width: 186px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">기관구분</th>
+                                            <td colspan="3" class="txt-left">
+                                                <!-- radioGroup -->
+                                                <div class="radioGroup">
+                                                    <div class="radio">
+                                                        <input type="radio" id="r01" name="rd" checked>
+                                                        <label for="r01">
+                                                            <span>국가</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" id="r02" name="rd">
+                                                        <label for="r02">
+                                                            <span>지방자치단체</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" id="r03" name="rd">
+                                                        <label for="r03">
+                                                            <span>공공단체</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" id="r04" name="rd">
+                                                        <label for="r04">
+                                                            <span>기타</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- //radioGroup -->
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i03">기관명</label>
+                                            </th>
+                                            <td class="txt-left">
+                                                <input type="text" id="i03" style="width: 186px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="s01">목적 및 근거</label>
+                                            </th>
+                                            <td class="txt-left">
+                                                <select id="s01" style="width: 100%;">
+                                                    <option>선택</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i04">근거법령</label>
+                                            </th>
+                                            <td colspan="3">
+                                                <input type="text" id="i04">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="s02">사용료 구분</label>
+                                            </th>
+                                            <td>
+                                                <select id="s02" style="width: 100%;">
+                                                    <option>선택</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i05">신청담당자</label>
+                                            </th>
+                                            <td>
+                                                <input type="text" id="i05">
+                                            </td>
+                                            <th scope="row">
+                                                <label for="s03">SMS 수신처</label>
+                                            </th>
+                                            <td class="txt-left">
+                                                <select id="s03" style="width: 94px;">
+                                                    <option>선택</option>
+                                                </select>
+                                                <input type="text" style="width: 94px;">
+                                                <input type="text" style="width: 94px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="t01">비고</label>
+                                            </th>
+                                            <td colspan="5">
+                                                <textarea id="t01" style="width: 100%; height: 98px;"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //table -->
+                            <div class="btnArea">
+                                <button type="button" class="btn grey lg">
+                                    <span>취소</span>
+                                </button>
+                                <button type="button" class="btn blue lg">
+                                    <span>수정</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //accordionBox -->
+                </section>
+                <!--//sec-->
+
+                <!-- sec -->
+                <section class="sec">
+                    <!--titArea-->
+                    <div class="titArea">
+                        <h2 class="titSec">대상자 정보</h2>
+                    </div>
+                    <!--//titArea-->
+                    <!-- accordionBox -->
+                    <div class="accordionBox active">
+                        <button type="button" class="btnAccordionToggle">
+                            <span class="hidden">보이기/숨기기</span>
+                        </button>
+                        <!-- greyCont -->
+                        <div class="greyCont">
+                            <div class="inner">
+                                <!-- rowBox -->
+                                <div class="rowBox">
+                                    <div class="rowBoxInner">
+                                        <div class="rowGroup">
+                                            <div class="flex ac">
+                                                <label for="i06">등록번호</label>
+                                                <input type="text" id="i06" style="width: 351px;margin-right: 6px;">
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn grey">
+                                                        <span>추가</span>
+                                                    </button>
+                                                    <button type="button" class="btn grey2">
+                                                        <span>삭제</span>
+                                                    </button>
+                                                    <button type="button" class="btn black3">
+                                                        <span>전체삭제</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="flex ac">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="chk01">
+                                                    <label for="chk01">
+                                                        <span>일련번호 포함</span>
+                                                    </label>
+                                                </div>
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn line2">
+                                                        <i class="ico file lt"></i>
+                                                        <span>파일추가</span>
+                                                    </button>
+                                                    <button type="button" class="btn line2">
+                                                        <i class="ico form lt"></i>
+                                                        <span>파일양식 다운로드</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //rowBox -->
+                                <!-- rowBox -->
+                                <div class="rowBox addressList">
+                                    <div class="rowBoxInner">
+                                        <ul class="rmList">
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk02">
+                                                        <label for="chk02">
+                                                            <span class="numSign">&#9312;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk03">
+                                                        <label for="chk03">
+                                                            <span class="numSign">&#9313;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk04">
+                                                        <label for="chk04">
+                                                            <span class="numSign">&#9314;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk05">
+                                                        <label for="chk05">
+                                                            <span class="numSign">&#9315;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li> 
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk06">
+                                                        <label for="chk06">
+                                                            <span class="numSign">&#9316;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk07">
+                                                        <label for="chk07">
+                                                            <span class="numSign">&#9317;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk08">
+                                                        <label for="chk08">
+                                                            <span class="numSign">&#9318;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk09">
+                                                        <label for="chk09">
+                                                            <span class="numSign">&#9319;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk10">
+                                                        <label for="chk10">
+                                                            <span class="numSign">&#9320;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk11">
+                                                        <label for="chk11">
+                                                            <span class="numSign">&#9321;</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk12">
+                                                        <label for="chk12">
+                                                            <span class="numSign">⑪</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk13">
+                                                        <label for="chk13">
+                                                            <span class="numSign">⑫</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk14">
+                                                        <label for="chk14">
+                                                            <span class="numSign">⑬</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk15">
+                                                        <label for="chk15">
+                                                            <span class="numSign">⑭</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk16">
+                                                        <label for="chk16">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk17">
+                                                        <label for="chk17">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk18">
+                                                        <label for="chk18">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk19">
+                                                        <label for="chk19">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk20">
+                                                        <label for="chk20">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li> 
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk21">
+                                                        <label for="chk21">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk22">
+                                                        <label for="chk22">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk23">
+                                                        <label for="chk23">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk24">
+                                                        <label for="chk24">
+                                                            <span class="numSign">⑮</span>
+                                                            <span>170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //rowBox -->
+                                <!-- rowBox -->
+                                <div class="rowBox">
+                                    <div class="rowBoxInner">
+                                        <label for="i07">
+                                            <span>조회사유</span>
+                                            <button type="button" class="va-m">
+                                                <i class="ico help rt"></i>
+                                            </button>
+                                        </label>
+                                        <input type="text" id="i07" style="width: 100%;">
+                                    </div>
+                                </div>
+                                <!-- //rowBox -->
+                            </div>
+                        </div>
+                        <!-- //greyCont -->
+                        <!-- bottomCont -->
+                        <div class="bottomCont">
+                            <div class="inner">
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn blue lg">
+                                        <span>신청</span>
+                                    </button>
+                                </div>
+                                <!-- //btnArea -->
+                            </div>
+                            
+                        </div>
+                        <!-- //bottomCont -->
+                    </div>
+                    <!-- //accordionBox -->
+                </section>
+                <!-- //sec -->
+            </div>
+        </div>
+    </div>
+
+    <!-- popup -->
+    <div class="popup" style="width: 740px;left: 666px;top:140px;">
+        <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        <div class="head">
+            <strong class="tit">등록번호 중복 확인</strong>
+        </div>
+        <!-- cont -->
+        <div class="cont">
+            <!-- inner -->
+            <div class="inner">
+                <!-- titArea -->
+                <div class="titArea">
+                    <div class="total">
+                        <p>전체
+                            <strong class="blue">14<span>건</span></strong>
+                        </p>
+                    </div>
+                </div>
+                <!-- //titArea -->
+                <!-- table -->
+                <div class="table cScroll" style="height: 500px;">
+                    <table>
+                        <caption>중복번호 확인 테이블</caption>
+                        <colgroup>
+                            <col style="width: 80px;">
+                            <col style="width: 150px;">
+                            <col style="width: 100px;">
+                            <col style="width: 140px;">
+                            <col style="width: 70px;">
+                            <col style="width: 90px;">
+                            <col style="width: 90px;">
+                            <col style="width: 140px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" rowspan="3">순번</th>
+                                <th scope="col" rowspan="3">등록번호</th>
+                                <th scope="col" colspan="5">소유구분/소유자명칭</th>
+                                <th scope="col" rowspan="3">
+                                    <label for="popS01">소유구분선택</label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="col" rowspan="2" class="bdl">개인</th>
+                                <th scope="col" rowspan="2">법인</th>
+                                <th scope="col" colspan="3">비법인</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="bdl">중종</th>
+                                <th scope="col">종교단체</th>
+                                <th scope="col">기타단체</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>170101-4111111</td>
+                                <td>홍길순</td>
+                                <td>길동주식회사</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS01" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>131</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS02" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>222</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS03" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>444444-2222222</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS04" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>444444-2222222</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS05" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>170101-4111111</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>종교</td>
+                                <td></td>
+                                <td>
+                                    <select id="popS06" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>131</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>종교</td>
+                                <td></td>
+                                <td>
+                                    <select id="popS07" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>222</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>종교</td>
+                                <td></td>
+                                <td>
+                                    <select id="popS08" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>444444-2222222</td>
+                                <td></td>
+                                <td></td>
+                                <td>중종</td>
+                                <td>종교</td>
+                                <td></td>
+                                <td>
+                                    <select id="popS09" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>444444-2222222</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td></td>
+                                <td>종교</td>
+                                <td></td>
+                                <td>
+                                    <select id="popS10" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>222</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td>중종</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS11" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>444444-2222222</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td>중종</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS12" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>444444-2222222</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td>중종</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS13" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>333333</td>
+                                <td></td>
+                                <td>길동주식회사</td>
+                                <td>중종</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <select id="popS14" style="width:100%">
+                                        <option>개인</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <div class="btnArea">
+                    <button type="button" class="btn grey lg">
+                        <span>닫기</span>
+                    </button>
+                    <button type="button" class="btn blue lg">
+                        <span>저장</span>
+                    </button>
+                </div>
+            </div>
+            <!-- //inner -->
+        </div>
+        <!-- //cont -->
+    </div>
+    <!-- //popup -->
+</div>
+</body>
+</html>

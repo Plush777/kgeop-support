@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">민원처리</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="민원처리"><span>민원처리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <!--
+                        <ul class="dep">
+                            <li>
+                                <span>선택</span>
+                            </li>
+                            <li>
+                                <span>선택</span>
+                            </li>
+                        </ul>
+                        -->
+                    </li>
+                    <li>
+                        <a href="#" title="소유내역정보처리"><span>소유내역정보처리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <!--
+                        <ul class="dep">
+                            <li>
+                                <span>선택</span>
+                            </li>
+                            <li>
+                                <span>선택</span>
+                            </li>
+                        </ul>
+                        -->
+                    </li>
+                </ul>
+            </div>
+            <div class="inner">
+
+                <h3 class="titPage">로그인</h3>
+                <!--//breadcrunb-->
+                <div class="loginWrap">
+                    <!--loginArea-->
+                    <div class="loginArea">
+                        <h4 class="type01">아이디로그인</h4>
+                        <!--inner-->
+                        <div class="box">
+                            <input type="text" placeholder="아이디 입력" style="width:100%;">
+                            <input type="password" placeholder="비밀번호 입력">
+                            <div class="saveId">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check01" class="hidden">
+                                    <label for="check01"></label>
+                                </div>
+                                <p>아이디저장</p>
+                            </div>
+                            <button type="button" class="btnLogin">로그인</button>
+                            <!--subArea-->
+                            <div class="subArea">
+                                <ul>
+                                    <li><a href="/">아이디 찾기</a></li>
+                                    <li><a href="/">비밀번호 찾기</a></li>
+                                    <li><a href="/">회원가입</a></li>
+                                </ul>
+                            </div>
+                            <!--//subArea-->
+                            <p class="txtInfo"><span class="txtBlue">비밀번호 5회 이상 로그인 실패시</span> 더이상 로그인 할 수 없습니다.</p>
+                        </div>
+                        <!--//inner-->
+                    </div>
+                    <!--//loginArea-->
+                    <!--loginArea-->
+                    <div class="loginArea">
+                        <h4 class="type02">인증서로그인</h4>
+                        <div class="box">
+                            <a href="/" class="btn_gpki">GPKI 로그인</a>
+                            <p class="txtInfo txtCenter">로그인을 위해서는 인증서가 필요합니다,</p>
+                        </div>
+                    </div>
+                    <!--//loginArea-->
+                </div>
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

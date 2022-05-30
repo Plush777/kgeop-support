@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">구토지대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장"><span>구토지대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="대장조회">
+                                    <span>대장조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="열람통계">
+                                    <span>열람통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="구토지대장관리">
+                                    <span>구토지대장관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장 신청"><span>구토지대장 신청</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">구토지대장 요청 상세</h3>
+                    <h2 class="titSec">신청 정보</h2>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <caption>구토지대장 요청 상세 신청테이블</caption>
+                            <colgroup>
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">신청 번호</th>
+                                    <td class="txt-left">000000</td>
+                                    <th scope="row">신청 제목</th>
+                                    <td colspan="5" class="txt-left">신규 등록</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청 내용</th>
+                                    <td colspan="7" class="txt-left">구 토지대장 신규 등록</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청 구분</th>
+                                    <td class="txt-left">등록</td>
+                                    <th scope="row">신청 일자</th>
+                                    <td class="txt-left">2021.06.03</td>
+                                    <th scope="row">신청자 ID</th>
+                                    <td class="txt-left">user</td>
+                                    <th scope="row">신청자 명</th>
+                                    <td class="txt-left">홍길동</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                   
+                    <h2 class="titSec">색인 정보</h2>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">색인 번호</th>
+                                    <td class="txt-left">000416</td>
+                                    <th scope="row">행정구역</th>
+                                    <td colspan="5" class="txt-left">서울특별시 강남구 논현동</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">지번 본번</th>
+                                    <td class="txt-left">17</td>
+                                    <th scope="row">지번 부번</th>
+                                    <td class="txt-left">10</td>
+                                    <th scope="row">대장 구분</th>
+                                    <td class="txt-left">
+                                        <div class="flex ac">
+                                            <span>토지대장</span>
+                                            <i class="ico blueArr"></i>
+                                            <span class="colorType blue2">임야대장</span>
+                                        </div>
+                                    </td>
+                                    <th scope="row">문서 구분</th>
+                                    <td class="txt-left">카드</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">권수</th>
+                                    <td class="txt-left">1</td>
+                                    <th scope="row">페이지 수</th>
+                                    <td class="txt-left">0</td>
+                                    <th scope="row">집합건물 여부</th>
+                                    <td class="txt-left" colspan="3">
+                                        <div class="flex ac">
+                                            <span>아니오</span>
+                                            <i class="ico blueArr"></i>
+                                            <span class="colorType blue2">예</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">건물 명</th>
+                                    <td colspan="7" class="txt-left">-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">동</th>
+                                    <td class="txt-left">-</td>
+                                    <th scope="row">층</th>
+                                    <td class="txt-left">-</td>
+                                    <th scope="row">호</th>
+                                    <td class="txt-left">-</td>
+                                    <th scope="row">실</th>
+                                    <td class="txt-left">-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">앞면</th>
+                                    <td class="txt-left" colspan="7">
+                                        <div class="flex ac">
+                                            <i class="ico png lt"></i>
+                                            <a href="#">Path/00_000_000_00.png</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    
+                    <h2 class="titSec">처리 정보</h2>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">처리 구분</th>
+                                    <td class="txt-left">
+                                        <strong>반려</strong>
+                                    </td>
+                                    <th scope="row">처리 일자</th>
+                                    <td class="txt-left">서울특별시 강남구 논현동</td>
+                                    <th scope="row">처리자 ID</th>
+                                    <td class="txt-left">admin</td>
+                                    <th scope="row">처리자 명</th>
+                                    <td class="txt-left">홍길순</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">반려 사유</th>
+                                    <td class="txt-left" colspan="7">정보 불일치</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="btnArea">
+                        <button type="button" class="btn blueLine lg">
+                            <span>반려</span>
+                        </button>
+                        <button type="button" class="btn blue lg">
+                            <span>승인</span>
+                        </button>
+                        <button type="button" class="btn grey lg">
+                            <span>목록</span>
+                        </button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

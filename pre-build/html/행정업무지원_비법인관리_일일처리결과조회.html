@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">비법인관리</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="비법인관리"><span>비법인관리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="등록번호별 등록사항">
+                                    <span>등록번호별 등록사항</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="일일처리결과조회">
+                                    <span>일일처리결과조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="비법인 통계">
+                                    <span>비법인 통계</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="일일처리결과조회"><span>일일처리결과조회</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">일일 처리결과 등록사항 목록</h3>
+                    <!--searchOpt-->
+                    <div class="searchOpt">
+                        <div class="flex">
+                            <div class="col">
+                                <div class="row">
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="s01">행정구역</label>
+                                        <select id="s01">
+                                            <option>전국</option>
+                                        </select>
+                                        <select id="s02">
+                                            <option>전체</option>
+                                        </select>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="s03">등록단체구분</label>
+                                        <select id="s03">
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="s04">처리구분</label>
+                                        <select id="s04">
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="chk01">발급일자</label>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01">
+                                            <label for="chk01"></label>
+                                        </div>
+                                        <input type="text" class="cal">
+                                        <span>~</span>
+                                        <input type="text" class="cal">
+                                    </div>
+                                    <!--//inputBox-->
+                                </div>
+                             </div>
+                            <button type="button" class="btn black">
+                                <span>검색</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--//searchOpt-->
+                    <!-- titArea -->
+                    <div class="titArea">
+                        <div class="total">
+                            <p>전체 건수
+                                <strong class="blue">42<span>건</span></strong>
+                            </p>
+                        </div>
+                        <div class="btnArea">
+                            <button type="button" class="btn line">
+                                <i class="ico excel lt"></i>
+                                <span>엑셀 다운로드</span>
+                            </button>
+                            <button type="button" class="btn line">
+                                <i class="ico print lt"></i>
+                                <span>출력</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //titArea -->
+
+                    <!-- table -->
+                    <div class="table result">
+                        <table>
+                            <colgroup>
+                                <col style="width: 70px;">
+                                <col style="width: 250px;">
+                                <col style="width: 200px;">
+                                <col style="width: 150px;">
+                                <col style="width: auto;">
+                                <col style="width: 200px;">
+                                <col style="width: 200px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">행정구역</th>
+                                    <th scope="col">출장소구분</th>
+                                    <th scope="col">등록단체구분</th>
+                                    <th scope="col">등록단체명</th>
+                                    <th scope="col">처리구분</th>
+                                    <th scope="col">처리일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울특별시 종로구</td>
+                                    <td>0</td>
+                                    <td>종교단체</td>
+                                    <td>대한불교조계종연운사</td>
+                                    <td>2-변경처리</td>
+                                    <td>2014.09.11</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>서울특별시 종로구</td>
+                                    <td>0</td>
+                                    <td>종교단체</td>
+                                    <td>대한불교조계종연운사</td>
+                                    <td>2-변경처리</td>
+                                    <td>2014.09.11</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>서울특별시 종로구</td>
+                                    <td>0</td>
+                                    <td>종교단체</td>
+                                    <td>대한불교조계종연운사</td>
+                                    <td>0-등록발급</td>
+                                    <td>2014.09.11</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>서울특별시 중구</td>
+                                    <td>0</td>
+                                    <td>기타단체</td>
+                                    <td>만달산향우회</td>
+                                    <td>0-등록발급</td>
+                                    <td>2014.09.11</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>서울특별시 광진구</td>
+                                    <td>0</td>
+                                    <td>종중</td>
+                                    <td>진주정씨공대공파충절공종회</td>
+                                    <td>0-등록발급</td>
+                                    <td>2014.09.11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="pagination">
+                        <button type="button" class="btnFirst"><span class="hidden">맨앞으로</span></button>
+                        <button type="button" class="btnPrev"><span class="hidden">이전페이지</span></button>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <button type="button" class="btnNext"><span class="hidden">다음페이지</span></button>
+                        <button type="button" class="btnLast"><span class="hidden">맨뒤로</span></button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">지적전산자료이용</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="지적전산자료이용"><span>지적전산자료이용</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="전산자료제공">
+                                    <span>전산자료제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="인터넷자료제공승인">
+                                    <span>인터넷자료제공승인</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="토지변동현황제공">
+                                    <span>토지변동현황제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료제공관리">
+                                    <span>자료제공관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-전송이력조회">
+                                    <span>전자결재관리-전송이력조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-공문서식관리">
+                                    <span>전자결재관리-공문서식관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="전산자료제공"><span>전산자료제공</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!-- sec -->
+                <section class="sec">
+                    <h3 class="titPage">자료제공관리 상세</h3>
+                    <!-- titArea -->
+                    <div class="titArea">
+                        <div class="total">
+                            <p>
+                                전체
+                                <strong class="blue">500<span>건</span></strong>
+                            </p>
+                        </div>
+                        <div class="btnArea">
+                            <button type="button" class="btn blue nm">
+                                <span>성명입력</span>
+                            </button>
+                            <button type="button" class="btn line2 sm">
+                                <i class="ico print lt"></i>
+                                <span>출력</span>
+                            </button>
+                            <button type="button" class="btn line2 sm dataDl">
+                                <i class="ico down lt"></i>
+                                <span>다운로드</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //titArea -->
+                    <!-- table -->
+                    <div class="table result">
+                        <table>
+                            <colgroup>
+                                <col style="width:70px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">순번</th>
+                                    <th scope="col">등록번호</th>
+                                    <th scope="col">성명</th>
+                                    <th scope="col" colspan="2">토지소재</th>
+                                    <th scope="col">지번</th>
+                                    <th scope="col">지목</th>
+                                    <th scope="col">면적</th>
+                                    <th scope="col">공유인수</th>
+                                    <th scope="col">변동일자</th>
+                                    <th scope="col">변동확인</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" colspan="2" class="bdl">소유자주소</th>
+                                    <th scope="col">소유구분</th>
+                                    <th scope="col">공시지가(원)</th>
+                                    <th scope="col">용도지역</th>
+                                    <th scope="col">용도지구</th>
+                                    <th scope="col">대지권지분 비율</th>
+                                    <th scope="col">집합 건물명</th>
+                                    <th scope="col">전유 부분</th>
+                                    <th scope="col">공유 구분</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">1</td>
+                                    <td>170101-4111111</td>
+                                    <td>홍길동</td>
+                                    <td colspan="2">서울시 종로구 청운동</td>
+                                    <td>1-1</td>
+                                    <td>공원</td>
+                                    <td>185</td>
+                                    <td>0</td>
+                                    <td>1995.07.01</td>
+                                    <td>소유권이전</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="bdl">서울시 종로구 청운동</td>
+                                    <td>군유지</td>
+                                    <td>1,117,800</td>
+                                    <td>자연녹지지역</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>본</td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2">2</td>
+                                    <td>170101-4111111</td>
+                                    <td>홍길동</td>
+                                    <td colspan="2">서울시 종로구 청운동</td>
+                                    <td>1-1</td>
+                                    <td>공원</td>
+                                    <td>185</td>
+                                    <td>0</td>
+                                    <td>1995.07.01</td>
+                                    <td>소유권이전</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="bdl">서울시 종로구 청운동</td>
+                                    <td>군유지</td>
+                                    <td>1,117,800</td>
+                                    <td>자연녹지지역</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>본</td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2">3</td>
+                                    <td>170101-4111111</td>
+                                    <td>홍길동</td>
+                                    <td colspan="2">서울시 종로구 청운동</td>
+                                    <td>1-1</td>
+                                    <td>공원</td>
+                                    <td>185</td>
+                                    <td>0</td>
+                                    <td>1995.07.01</td>
+                                    <td>소유권이전</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="bdl">서울시 종로구 청운동</td>
+                                    <td>군유지</td>
+                                    <td>1,117,800</td>
+                                    <td>자연녹지지역</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>본</td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2">4</td>
+                                    <td>170101-4111111</td>
+                                    <td>홍길동</td>
+                                    <td colspan="2">서울시 종로구 청운동</td>
+                                    <td>1-1</td>
+                                    <td>공원</td>
+                                    <td>185</td>
+                                    <td>0</td>
+                                    <td>1995.07.01</td>
+                                    <td>소유권이전</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="bdl">서울시 종로구 청운동</td>
+                                    <td>군유지</td>
+                                    <td>1,117,800</td>
+                                    <td>자연녹지지역</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>본</td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2">5</td>
+                                    <td>170101-4111111</td>
+                                    <td>홍길동</td>
+                                    <td colspan="2">서울시 종로구 청운동</td>
+                                    <td>1-1</td>
+                                    <td>공원</td>
+                                    <td>185</td>
+                                    <td>0</td>
+                                    <td>1995.07.01</td>
+                                    <td>소유권이전</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="bdl">서울시 종로구 청운동</td>
+                                    <td>군유지</td>
+                                    <td>1,117,800</td>
+                                    <td>자연녹지지역</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>본</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                   
+                    <div class="pagination">
+                        <button type="button" class="btnFirst"><span class="hidden">맨앞으로</span></button>
+                        <button type="button" class="btnPrev"><span class="hidden">이전페이지</span></button>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <button type="button" class="btnNext"><span class="hidden">다음페이지</span></button>
+                        <button type="button" class="btnLast"><span class="hidden">맨뒤로</span></button>
+                    </div>
+                </section>
+                <!-- //sec -->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+    <!-- popup -->
+    <div class="popup" style="width: 481px;right:700px;top: 350px; display: none;">
+        <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        <div class="head">
+            <strong class="tit">다운로드</strong>
+        </div>
+        <div class="cont">
+            <div class="inner">
+                <div class="btnArea right">
+                    <button type="button">
+                        <i class="ico help"></i>
+                    </button>
+                </div>
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 210px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="s01">파일유형</label>
+                                </th>
+                                <td>
+                                    <select id="s01" style="width: 100%;">
+                                        <option>선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="i01">비밀번호 입력</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="i01" style="width: 100%;" value="일반">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="i02">다운로드 사유</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="i02" style="width: 100%;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <div class="btnArea">
+                    <button type="button" class="btn grey lg">
+                        <span>닫기</span>
+                    </button>
+                    <button type="button" class="btn blue lg">
+                        <span>다운로드</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //popup -->
+
+    <!-- popup -->
+    <div class="popup" style="width: 511px;right:130px;top: 350px; ">
+        <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        <div class="head">
+            <strong class="tit">조회 대상자 성명 표기</strong>
+        </div>
+        <div class="cont">
+            <div class="inner">
+                <!-- searchOpt -->
+                <div class="searchOpt">
+                    <div class="flex ct ac">
+                        <label for="popI01" style="margin-right: 20px;">등록번호</label>
+                        <input type="text" id="popI01" style="width:304px;">
+                        <button type="button" class="btn black2">
+                            <span>조회</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- //searchOpt -->
+                
+                <!-- titArea -->
+                <div class="titArea">
+                    <div class="total">
+                        <p>
+                            검색 건수
+                            <strong class="blue">2<span>건</span></strong>
+                        </p>
+                    </div>
+                    <div class="btnArea">
+                        <button type="button" class="btn line2 sm">
+                            <i class="ico fileAll lt"></i>
+                            <span>전체보기</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- //titArea -->
+                <!-- table -->
+                <div class="table result">
+                    <table>
+                        <colgroup>
+                            <col style="width: 60px;">
+                            <col style="width: 150px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">등록번호</th>
+                                <th scope="col">성명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <label for="popI02">라벨 텍스트</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="popI02" style="width: 100%;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <label for="popI03">라벨 텍스트</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="popI03" style="width: 100%;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <div class="pagination">
+                    <button type="button" class="btnFirst"><span class="hidden">맨앞으로</span></button>
+                    <button type="button" class="btnPrev"><span class="hidden">이전페이지</span></button>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <button type="button" class="btnNext"><span class="hidden">다음페이지</span></button>
+                    <button type="button" class="btnLast"><span class="hidden">맨뒤로</span></button>
+                </div>
+                <div class="btnArea right">
+                    <button type="button" class="btn blue lg">
+                        <span>저장</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //popup -->
+</div>
+</body>
+</html>

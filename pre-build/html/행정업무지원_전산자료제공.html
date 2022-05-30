@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">지적전산자료이용</h3>
+          </div>
+          <!--//inner-->
+        </div>
+    </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="지적전산자료이용"><span>지적전산자료이용</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="전산자료제공">
+                                    <span>전산자료제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="인터넷자료제공승인">
+                                    <span>인터넷자료제공승인</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="토지변동현황제공">
+                                    <span>토지변동현황제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료제공관리">
+                                    <span>자료제공관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-전송이력조회">
+                                    <span>전자결재관리-전송이력조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-공문서식관리">
+                                    <span>전자결재관리-공문서식관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                       <!-- // -->
+                    </li>
+                    <li class="link">
+                        <a href="#" title="전산자료제공"><span>전산자료제공</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                   <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       <!-- // -->
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">전산자료제공신청</h3>
+                    <!--titArea-->
+                    <div class="titArea">
+                        <h2 class="titSec">신청자 정보</h2>
+                    </div>
+                    <!--//titArea-->
+                    <!-- accordionBox -->
+                    <div class="accordionBox active">
+                        <button type="button" class="btnAccordionToggle">
+                            <span class="hidden">보이기/숨기기</span>
+                        </button>
+                        <!-- inner -->
+                        <div class="inner">
+                            <!-- dateArea -->
+                            <div class="listArea">
+                                <div class="flex">
+                                    <p>작업번호 1313</p>
+                                    <p>신청일자 2021-08-12</p>
+                                </div>
+                            </div>
+                            <!-- //dateArea -->
+                            <!-- table -->
+                            <div class="table">
+                                <table>
+                                    <caption>신청자 정보 테이블</caption>
+                                    <colgroup>
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: 213px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="i01">접수번호</label>
+                                            </th>
+                                            <td class="pos-r">
+                                                <input type="text" id="i01">
+                                                <button type="button" class="btnInputSearch">
+                                                    <span class="hidden">검색</span>
+                                                </button>
+                                            </td>
+                                            <th scope="row">
+                                                <label for="c01">접수일자</label>
+                                            </th>
+                                            <td>
+                                                <input type="text" id="c01" class="cal">
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i02">공문번호</label>
+                                            </th>
+                                            <td class="txt-left">
+                                                <input type="text" id="i02" style="width: 186px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">기관구분</th>
+                                            <td colspan="3" class="txt-left">
+                                                <!-- radioGroup -->
+                                                <div class="radioGroup">
+                                                    <div class="radio">
+                                                        <input type="radio" id="r01" name="rd" checked>
+                                                        <label for="r01">
+                                                            <span>국가</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" id="r02" name="rd">
+                                                        <label for="r02">
+                                                            <span>지방자치단체</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" id="r03" name="rd">
+                                                        <label for="r03">
+                                                            <span>공공단체</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" id="r04" name="rd">
+                                                        <label for="r04">
+                                                            <span>기타</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- //radioGroup -->
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i03">기관명</label>
+                                            </th>
+                                            <td class="txt-left pos-r">
+                                                <input type="text" id="i03" style="width: 186px;">
+                                                <button type="button" class="btnInputSearch" style="left: 155px;right: 0;">
+                                                    <span class="hidden">검색</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="s01">목적 및 근거</label>
+                                            </th>
+                                            <td class="txt-left">
+                                                <select id="s01" style="width: 100%;">
+                                                    <option>선택</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i04">근거법령</label>
+                                            </th>
+                                            <td colspan="3">
+                                                <input type="text" id="i04">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="s02">사용료 구분</label>
+                                            </th>
+                                            <td>
+                                                <select id="s02" style="width: 100%;">
+                                                    <option>선택</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">
+                                                <label for="i05">신청담당자</label>
+                                            </th>
+                                            <td>
+                                                <input type="text" id="i05">
+                                            </td>
+                                            <th scope="row">
+                                                <label for="s03">SMS 수신처</label>
+                                            </th>
+                                            <td class="txt-left">
+                                                <select id="s03" style="width: 94px;">
+                                                    <option>선택</option>
+                                                </select>
+                                                <input type="text" style="width: 94px;">
+                                                <input type="text" style="width: 94px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="t01">비고</label>
+                                            </th>
+                                            <td colspan="5">
+                                                <textarea id="t01" style="width: 100%; height: 98px;"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //table -->
+                            <div class="btnArea">
+                                <button type="button" class="btn grey lg">
+                                    <span>취소</span>
+                                </button>
+                                <button type="button" class="btn blue lg">
+                                    <span>수정</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //accordionBox -->
+                </section>
+                <!--//sec-->
+
+                <!-- sec -->
+                <section class="sec">
+                    <!--titArea-->
+                    <div class="titArea">
+                        <h2 class="titSec">대상자 정보</h2>
+                    </div>
+                    <!--//titArea-->
+                    <!-- accordionBox -->
+                    <div class="accordionBox active">
+                        <button type="button" class="btnAccordionToggle">
+                            <span class="hidden">보이기/숨기기</span>
+                        </button>
+                        <!-- greyCont -->
+                        <div class="greyCont">
+                            <div class="inner">
+                                <!-- rowBox -->
+                                <div class="rowBox">
+                                    <div class="rowBoxInner">
+                                        <div class="rowGroup">
+                                            <div class="flex ac">
+                                                <label for="i06">등록번호</label>
+                                                <input type="text" id="i06" style="width: 351px;margin-right: 6px;">
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn grey">
+                                                        <span>추가</span>
+                                                    </button>
+                                                    <button type="button" class="btn grey2">
+                                                        <span>삭제</span>
+                                                    </button>
+                                                    <button type="button" class="btn black3">
+                                                        <span>전체삭제</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="flex ac">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="chk01">
+                                                    <label for="chk01">
+                                                        <span>일련번호 포함</span>
+                                                    </label>
+                                                </div>
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn line2">
+                                                        <i class="ico file lt"></i>
+                                                        <span>파일추가</span>
+                                                    </button>
+                                                    <button type="button" class="btn line2">
+                                                        <i class="ico form lt"></i>
+                                                        <span>파일양식 다운로드</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //rowBox -->
+                                
+                                <!-- rowBox -->
+                                <div class="rowBox">
+                                    <div class="rowBoxInner">
+                                        <label for="i07">
+                                            <span>조회사유</span>
+                                            <!-- 10-06 추가요청사항 추가 : popHelp 클래스 -->
+                                            <!-- 10-06 추가요청사항 추가 : popHelp 클래스 -->
+                                            <!-- 10-06 추가요청사항 추가 : popHelp 클래스 -->
+                                            <button type="button" class="va-m popHelp">
+                                                <i class="ico help rt"></i>
+                                            </button>
+                                            <!-- // -->
+                                        </label>
+                                        <input type="text" id="i07" style="width: 100%;">
+                                    </div>
+                                </div>
+                                <!-- //rowBox -->
+                                <!-- rowBox -->
+                                <div class="rowBox addressList cScroll" style="height: 262px;">
+                                    <div class="rowBoxInner">
+                                        <ul class="rmList">
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk02">
+                                                        <label for="chk02">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea">
+                                                                <span class="numSign">1</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk03">
+                                                        <label for="chk03">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea">
+                                                                <span class="numSign">2</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk04">
+                                                        <label for="chk04">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea">
+                                                                <span class="numSign">3</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk05">
+                                                        <label for="chk05">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea">
+                                                                <span class="numSign">10</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li> 
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk06">
+                                                        <label for="chk06">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea">
+                                                                <span class="numSign">99</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk07">
+                                                        <label for="chk07">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea">
+                                                                <span class="numSign">99</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk08">
+                                                        <label for="chk08">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea">
+                                                                <span class="numSign">99</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk09">
+                                                        <label for="chk09">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">100</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk10">
+                                                        <label for="chk10">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">100</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk11">
+                                                        <label for="chk11">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">999</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk12">
+                                                        <label for="chk12">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">1111</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk13">
+                                                        <label for="chk13">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">1111</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk14">
+                                                        <label for="chk14">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">1111</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk15">
+                                                        <label for="chk15">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">1111</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk16">
+                                                        <label for="chk16">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">1111</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk17">
+                                                        <label for="chk17">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">9999</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk18">
+                                                        <label for="chk18">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">9999</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk19">
+                                                        <label for="chk19">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">9999</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk20">
+                                                        <label for="chk20">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">9999</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li> 
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk21">
+                                                        <label for="chk21">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk22">
+                                                        <label for="chk22">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk23">
+                                                        <label for="chk23">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk24">
+                                                        <label for="chk24">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk25">
+                                                        <label for="chk25">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk26">
+                                                        <label for="chk26">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk27">
+                                                        <label for="chk27">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk28">
+                                                        <label for="chk28">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rmBox">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk29">
+                                                        <label for="chk29">
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <!-- 10-06 추가요청사항 추가 : numArea -->
+                                                            <div class="numArea lg">
+                                                                <span class="numSign">10000</span>
+                                                            </div>
+                                                            <!-- // -->
+                                                            <span title="170101-4111111">170101-4111111</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" class="btnAddressRm"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //rowBox -->
+
+                                <!-- 10-12 추가 : empty클래스 (처음 들어왔을경우 빈화면) -->
+                                <!-- 10-12 추가 : empty클래스 (처음 들어왔을경우 빈화면) -->
+                                <!-- 10-12 추가 : empty클래스 (처음 들어왔을경우 빈화면) -->
+                                <!-- rowBox -->
+                                <div class="rowBox empty" style="height: 262px;">
+                                    <div class="rowBoxInner">
+                                        <div class="noDataArea">
+                                            <div class="noData">
+                                                <span class="hidden">경고</span>
+                                            </div>
+                                            <p>데이터가 없습니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //rowBox -->
+                                <!-- // -->
+                            </div>
+                        </div>
+                        <!-- //greyCont -->
+                        <!-- bottomCont -->
+                        <div class="bottomCont">
+                            <div class="inner">
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn blue lg">
+                                        <span>신청</span>
+                                    </button>
+                                </div>
+                                <!-- //btnArea -->
+                            </div>
+                            
+                        </div>
+                        <!-- //bottomCont -->
+                    </div>
+                    <!-- //accordionBox -->
+                </section>
+                <!-- //sec -->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+
+    <!-- 10-06 추가요청사항 추가 : popup -->
+    <!-- 10-06 추가요청사항 추가 : popup -->
+    <!-- 10-06 추가요청사항 추가 : popup -->
+    <!-- popup -->
+    <div class="popup" style="width: 668px;left: 100px; top:580px; display: none;">
+        <button type="button" class="btnPopClose">
+            <span class="hidden">팝업 닫기</span>
+        </button>
+        <!-- head -->
+        <div class="head">
+            <strong class="tit">국토정보시스템 개인정보 안정성 확보조치</strong>
+        </div>
+        <!-- //head -->
+
+        <!-- cont -->
+        <div class="cont">
+            <!-- inner -->
+            <div class="inner">
+                <h2 class="titSec">국토정보시스템 개인정보 안전성 확보조치</h2>
+                <div class="greyBox type02">
+                    <p> 개인정보 조회시 개인정보의 안전성 확보조치 기준 제 8조 2항에 따라 반드시 그 사유를 확인하여야 합니다. 기록하신 사유는 향후 접속기록 점검시 소명자료로 활용될 수 있으므로, 신중하게 작성하여 주시기 바랍니다. (10자리 이상)</p>
+                    <p class="ex">- 예시 : ㅇㅇ기관에서 ㅇㅇㅇ업무를 위해 ㅇㅇㅇ법 제ㅇㅇ조에 의거한 자료 제공을 위한 조회</p> 
+                </div>
+                <div class="btnArea right">
+                    <button type="button" class="btn grey lg">
+                        <span>닫기</span>
+                    </button>
+                </div>
+            </div>
+            <!-- //inner -->
+        </div>
+        <!-- //cont -->
+    </div>
+    <!-- //popup -->
+</div>
+</body>
+</html>

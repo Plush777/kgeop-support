@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">자료이용대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="자료이용대장"><span>자료이용대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="자료이용대장현황조회">
+                                    <span>자료이용대장현황조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료이용통계">
+                                    <span>자료이용통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="비정형/지가산정자료제공">
+                                    <span>비정형지가산정자료제공</span>
+                                </a>
+                            </li>
+                        </ul>
+                       <!-- // -->
+                    </li>
+                    <li class="link">
+                        <a href="#" title="비정형/지가산정 자료제공"><span>비정형/지가산정 자료제공</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!-- sec -->
+                <section class="sec">
+                    <h3 class="titPage">비정형/지가산정 자료제공</h3>
+                    <!--searchOpt-->
+                    <div class="searchOpt">
+                        <div class="flex">
+                            <div class="col">
+                                <div class="row">
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp1">작업구분</label>
+                                        <select id="inp1">
+                                            <option value="전체" selected>전체</option>
+                                        </select>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp2">작업자</label>
+                                        <select id="inp2">
+                                            <option value="전체" selected>전체</option>
+                                        </select>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!-- inputBox -->
+                                    <div class="inputBox">
+                                        <label for="inp3">작업일자</label>
+                                        <div class="calGroup">
+                                            <input type="text" class="cal" id="inp3"/>
+                                            <span>~</span>
+                                            <input type="text" class="cal"/>
+                                        </div>
+                                    </div>
+                                    <!-- //inputBox -->
+                                </div>
+                                <div class="row">
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp4">공문명</label>
+                                        <input type="text" id="inp4"/>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp5">신청기관</label>
+                                        <input type="text" id="inp5"/>
+                                    </div>
+                                    <!--//inputBox-->
+                                </div>
+                            </div>
+                            <button type="button" class="btn black"><span>검색</span></button>
+                        </div>
+                    </div>
+                    <!--//searchOpt-->
+
+                    <!-- titArea -->
+                    <div class="titArea">
+                        <div class="total">
+                            <p>
+                                전체
+                                <strong class="blue">6<span>건</span></strong>
+                            </p>
+                        </div>
+                        <div class="btnArea">
+                            <button type="button" class="btn blue nm">
+                                <span>등록</span>
+                            </button>
+                            <button type="button" class="btn line sm">
+                                <i class="ico excel lt"></i>
+                                <span>엑셀 다운로드</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //titArea -->
+                    <!-- table -->
+                    <div class="table result">
+                        <table>
+                            <caption>비정형/지가선정 자료제공 테이블</caption>
+                            <colgroup>
+                                <col style="width: 70px;">
+                                <col style="width: 200px;">
+                                <col style="width: 250px;">
+                                <col style="width: 250px;">
+                                <col style="width: 350px;">
+                                <col style="width: auto;">
+                                <col style="width: 90px;">
+                                <col style="width: 190px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">순번</th>
+                                    <th scope="col">접수일자</th>
+                                    <th scope="col">작업번호</th>
+                                    <th scope="col">신청구분</th>
+                                    <th scope="col">신청기관</th>
+                                    <th scope="col">공문번호</th>
+                                    <th scope="col">작업자</th>
+                                    <th scope="col">작업일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>6</td>
+                                    <td>-</td>
+                                    <td>5</td>
+                                    <td>지가변동률</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>테스트</td>
+                                    <td>2021-08-11</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>-</td>
+                                    <td>6</td>
+                                    <td>표준지공시지가</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>테스트</td>
+                                    <td>2021-08-11</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>2021-08-06</td>
+                                    <td>4</td>
+                                    <td>지가변동률</td>
+                                    <td>국무총리</td>
+                                    <td>ddd</td>
+                                    <td>테스트</td>
+                                    <td>2021-08-06</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2021-08-06</td>
+                                    <td>3</td>
+                                    <td>지가변동률</td>
+                                    <td>(사)고흥군교육발전위원회</td>
+                                    <td>ddd</td>
+                                    <td>테스트</td>
+                                    <td>2021-08-06</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2021-08-05</td>
+                                    <td>2</td>
+                                    <td>표준지공시지가</td>
+                                    <td>(사)광주광역시교통문화연수원</td>
+                                    <td>ddd</td>
+                                    <td>테스트</td>
+                                    <td>2021-08-05</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2021-08-05</td>
+                                    <td>1</td>
+                                    <td>지가변동률</td>
+                                    <td>(사) 고흥군교육발전위원회</td>
+                                    <td>ddd</td>
+                                    <td>테스트</td>
+                                    <td>2021-08-05</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                    </div>
+                </section>
+                <!-- //sec -->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

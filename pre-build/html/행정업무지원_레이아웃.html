@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">민원처리</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="민원처리"><span>민원처리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                    <li class="link">
+                        <a href="#" title="소유내역정보처리"><span>소유내역정보처리</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <!--titArea-->
+                    <div class="titArea">
+                        <h2 class="titSec">신청자 정보</h2>
+                    </div>
+                    <!--//titArea-->
+                    <!-- accordionBox -->
+                    <div class="accordionBox active">
+                        <button type="button" class="btnAccordionToggle">
+                            <span class="hidden">보이기/숨기기</span>
+                        </button>
+                        <!-- inner -->
+                        <div class="inner">
+                            <!-- dateArea -->
+                            <div class="dateArea">
+                                <div class="flex">
+                                    <p>작업번호 1313</p>
+                                    <p>신청일자 2021-08-12</p>
+                                </div>
+                            </div>
+                            <!-- //dateArea -->
+                            <!-- table -->
+                            <div class="table result cScroll">
+                                <table>
+                                    <caption>신청자정보 테이블</caption>
+                                    <colgroup>
+                                        <col style="width: 200px;"/>
+                                        <col style="width: 180px;"/>
+                                        <col style="width: 200px;"/>
+                                        <col style="width: 180px;"/>
+                                        <col style="width: 200px;"/>
+                                        <col style="width: 180px;"/>
+                                        <col style="width: 200px;"/>
+                                        <col style="width: 180px;"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">신청구분</th>
+                                            <td>소유현황조회(등록번호)</td>
+                                            <th scope="row">접수번호</th>
+                                            <td>4</td>
+                                            <th scope="row">신청자 성명</th>
+                                            <td>송은희</td>
+                                            <th scope="row">주민등록번호</th>
+                                            <td>313131-3131313</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="wideH">비고</th>
+                                            <td colspan="7" class="txt-left">비고내용</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //table -->
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //accordionBox -->
+                </section>
+                <!--//sec-->
+
+                <!-- sec -->
+                <section class="sec">
+                    <!--titArea-->
+                    <div class="titArea">
+                        <h2 class="titSec">대상자 정보</h2>
+                    </div>
+                    <!--//titArea-->
+                    <!-- accordionBox -->
+                    <div class="accordionBox active">
+                        <button type="button" class="btnAccordionToggle">
+                            <span class="hidden">보이기/숨기기</span>
+                        </button>
+                        <!-- inner -->
+                        <div class="inner">
+                            <!-- flex -->
+                            <div class="flex">
+                                <!-- titArea -->
+                                <div class="titArea">
+                                    <div class="total">
+                                        <p>본인
+                                            <strong class="blue">1<span>건</span></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- //titArea -->
+
+                                <!-- titArea -->
+                                <div class="titArea">
+                                    <div class="total">
+                                        <p>상속
+                                            <strong class="blue">3<span>건</span></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- //titArea -->
+
+                                <!-- titArea -->
+                                <div class="titArea">
+                                    <div class="total">
+                                        <p>위임
+                                            <strong class="blue">5<span>건</span></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- //titArea -->
+
+                                <!-- titArea -->
+                                <div class="titArea">
+                                    <div class="total">
+                                        <p>미성년자
+                                            <strong class="blue">3<span>건</span></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- //titArea -->
+                            </div>
+                            <!-- //flex -->
+
+                            <!-- table -->
+                            <div class="table result">
+                                <table>
+                                    <caption>대상자 정보 테이블</caption>
+                                    <colgroup>
+                                        <col style="width: 96px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" rowspan="2">1</th>
+                                            <th scope="row">등록번호</th>
+                                            <td>1111</td>
+                                            <th scope="row">신청구분</th>
+                                            <td>본인</td>
+                                            <th scope="row">상세구분</th>
+                                            <td>개인확인용</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bdl">조회범위</th>
+                                            <td colspan="5"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //table -->
+
+                            <!-- table -->
+                            <div class="table result">
+                                <table>
+                                    <caption>대상자 정보 테이블</caption>
+                                    <colgroup>
+                                        <col style="width: 96px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: 268px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" rowspan="3">2</th>
+                                            <th scope="row">등록번호</th>
+                                            <td>1111</td>
+                                            <th scope="row">신청구분</th>
+                                            <td>위임</td>
+                                            <th scope="row">상세구분</th>
+                                            <td>개인확인용</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bdl">위임자 성명</th>
+                                            <td>홍길동</td>
+                                            <th scope="row">통보방법</th>
+                                            <td class="txt-left" colspan="3">
+                                                <!-- 10-12 수정 및 추가 : post,span -->
+                                                <!-- 10-12 수정 및 추가 : post,span -->
+                                                <!-- 10-12 수정 및 추가 : post,span -->
+                                                <div class="flex ac">
+                                                    <i class="ico sms lt"></i>
+                                                    <i class="ico post lt"></i>
+                                                    <span>010-0000-0000</span>
+                                                </div>
+                                                <!-- // -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bdl">조회범위</th>
+                                            <td colspan="5"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //table -->
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //accordionBox -->
+                    <!-- btnArea -->
+                    <div class="btnArea">
+                        <button type="button" class="btn grey lg">
+                            <span>목록</span>
+                        </button>
+                        <button type="button" class="btn blue lg">
+                            <span>수정</span>
+                        </button>
+                    </div>
+                    <!-- //btnArea -->
+                </section>
+                <!-- //sec -->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">지적전산자료이용</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="지적전산자료이용"><span>지적전산자료이용</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="전산자료제공">
+                                    <span>전산자료제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="인터넷자료제공승인">
+                                    <span>인터넷자료제공승인</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="토지변동현황제공">
+                                    <span>토지변동현황제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료제공관리">
+                                    <span>자료제공관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-전송이력조회">
+                                    <span>전자결재관리-전송이력조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-공문서식관리">
+                                    <span>전자결재관리-공문서식관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="인터넷자료제공승인"><span>인터넷자료제공승인</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">인터넷 자료제공 승인 상세</h3>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                                <col style="width:213px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">시행번호</th>
+                                    <td colspan="3" class="txt-left">영기-10520</td>
+                                    <th scope="row">시행일자</th>
+                                    <td>
+                                        <!-- editCont -->
+                                        <div class="editCont">
+                                            <span>2021-08-03</span>
+                                            <div class="editGroup">
+                                                <button type="button">
+                                                    <i class="ico edit"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- //editCont -->
+                                    </td>
+                                    <th scope="row">
+                                        <label for="c01">접수일자</label>
+                                    </th>
+                                    <td>
+                                        <!-- editCont -->
+                                        <div class="editCont">
+                                            <input type="text" class="cal" id="c01" style="width:125px;">
+                                            <div class="editGroup">
+                                                <button type="button" class="btnSubmit">
+                                                    <span class="hidden">등록</span>
+                                                </button>
+                                                <button type="button" class="btnCancel">
+                                                    <span class="hidden">취소</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- //editCont -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">심사시행기관</th>
+                                    <td class="txt-left">고용노동부</td>
+                                    <th scope="row">심사시행번호</th>
+                                    <td colspan="3" class="txt-left">장애인고용과-1440 (2017-04-24)</td>
+                                    <th scope="row">심사시행일자</th>
+                                    <td class="txt-left">2021-06-13</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">기관구분</th>
+                                    <td class="txt-left">공공기관</td>
+                                    <th scope="row">심사기관명</th>
+                                    <td colspan="5" class="txt-left">한국장애인고용공단 본부</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청목적</th>
+                                    <td colspan="7">
+                                        <!-- editCont -->
+                                        <div class="editCont">
+                                            <p>재무관계자의 여신사후관리 관련 재산조사</p>
+                                            <div class="editGroup">
+                                                <button type="button" class="btnEdit">
+                                                   <span class="hidden">수정</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- //editCont -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">근거법령 (0법 제 0조)</th>
+                                    <td colspan="7">
+                                        <div class="editCont">
+                                            <input type="text" value="장애인고용촉진 및 직업재활법 제 81조" style="width: 257px;">
+                                            <div class="editGroup">
+                                                <button type="button" class="btnSubmit">
+                                                   <span class="hidden">등록</span>
+                                                </button>
+                                                <button type="button" class="btnCancel">
+                                                    <span class="hidden">취소</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">조회범위</th>
+                                    <td colspan="7"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청자</th>
+                                    <td class="txt-left">서금지</td>
+                                    <th scope="row">휴대폰번호</th>
+                                    <td class="txt-left">010-1234-1234</td>
+                                    <th scope="row">행정전화번호</th>
+                                    <td class="txt-left">031-406-8597</td>
+                                    <th scope="row">E-mail</th>
+                                    <td class="txt-left">jhit@jhit.co.kr</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">비고</th>
+                                    <td colspan="7"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">요청파일</th>
+                                    <td colspan="7"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">수수료구분</th>
+                                    <td></td>
+                                    <th scope="row">파일형식</th>
+                                    <td></td>
+                                    <th scope="row">신청인원</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보안요청사유</th>
+                                    <td colspan="7"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">조회인원</th>
+                                    <td class="txt-left">고용노동부</td>
+                                    <th scope="row">조회필지</th>
+                                    <td colspan="5" class="txt-left">장애인고용과-1440 (2017-04-24)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">수수료</th>
+                                    <td></td>
+                                    <th scope="row">심사시행번호</th>
+                                    <td></td>
+                                    <th scope="row">제공완료일</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">첨부파일</th>
+                                    <td colspan="7">
+                                        <div class="listArea fileList">
+                                            <div class="flex">
+                                                <a href="#">파일명.txt (1.3MB)</a>
+                                                <a href="#">파일명.txt (1.3MB)</a>
+                                                <a href="#">파일명.txt (1.3MB)</a>
+                                            </div>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn blueLine2">
+                                                    <span>전체 파일 다운로드</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <h2 class="titSec">결제정보</h2>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                                <col style="width: 145px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">결제방법</th>
+                                    <td></td>
+                                    <th scope="row">결제일자</th>
+                                    <td></td>
+                                    <th scope="row">이체수수료</th>
+                                    <td>250원</td>
+                                    <th scope="row">정산일자</th>
+                                    <td></td>
+                                    <th scope="row">정산수수료</th>
+                                    <td>500원</td>
+                                    <th scope="row">정산금액</th>
+                                    <td>11,250원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="i01">결제담당자</label>
+                                    </th>
+                                    <td colspan="5" class="txt-left">
+                                        <input type="text" id="i01" style="width: 186px;">
+                                    </td>
+                                    <th scope="row">
+                                        <label for="s01">SMS 수신처</label>
+                                    </th>
+                                    <td colspan="5" class="txt-left">
+                                        <select id="s01" style="width: 94px;">
+                                            <option>선택</option>
+                                        </select>
+                                        <input type="text" style="width: 94px;">
+                                        <input type="text" style="width: 94px;">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="btnArea">
+                        <button type="button" class="btn sky lg">
+                            <span>보안요청</span>
+                        </button>
+                        <button type="button" class="btn peacock lg">
+                            <span>SMS 발송</span>
+                        </button>
+                        <button type="button" class="btn blue lg">
+                            <span>추출</span>
+                        </button>
+                        <button type="button" class="btn blueLine lg">
+                            <span>제공완료</span>
+                        </button>
+                        <button type="button" class="btn grey lg">
+                            <span>목록</span>
+                        </button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">지적전산자료이용</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="지적전산자료이용"><span>지적전산자료이용</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="전산자료제공">
+                                    <span>전산자료제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="인터넷자료제공승인">
+                                    <span>인터넷자료제공승인</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="토지변동현황제공">
+                                    <span>토지변동현황제공</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료제공관리">
+                                    <span>자료제공관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-전송이력조회">
+                                    <span>전자결재관리-전송이력조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="전자결재관리-공문서식관리">
+                                    <span>전자결재관리-공문서식관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="전산자료제공"><span>전산자료제공</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!-- sec -->
+                <section class="sec">
+                    <h3 class="titPage">자료제공관리 목록</h3>
+                    <!--searchOpt-->
+                    <div class="searchOpt">
+                        <div class="flex">
+                            <div class="col">
+                                <div class="row">
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp1">작업일자</label>
+                                        <div class="calGroup">
+                                            <input type="text" class="cal" id="inp1"/>
+                                            <span>~</span>
+                                            <input type="text" class="cal"/>
+                                        </div>
+                                        <div class="tab">
+                                            <button type="button" class="btn line"><span>당일</span></button>
+                                            <button type="button" class="btn line"><span>1주일</span></button>
+                                            <button type="button" class="btn line active"><span>1개월</span></button>
+                                            <button type="button" class="btn line"><span>3개월</span></button>
+                                        </div>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp2">작업자</label>
+                                        <select id="inp2">
+                                            <option value="전체" selected>전체</option>
+                                        </select>
+                                    </div>
+                                    <!--//inputBox-->
+                                </div>
+                                <div class="row">
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp3">공문번호</label>
+                                        <input type="text" id="inp3"/>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp4">신청자명</label>
+                                        <input type="text" id="inp4"/>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="inp5">근거법령</label>
+                                        <input type="text" id="inp5"/>
+                                    </div>
+                                    <!--//inputBox-->
+                                </div>
+                            </div>
+                            <button type="button" class="btn black"><span>검색</span></button>
+                        </div>
+                    </div>
+                    <!--//searchOpt-->
+
+                    <!-- titArea -->
+                    <div class="titArea">
+                        <div class="total">
+                            <p>
+                                전체
+                                <strong class="blue">500<span>건</span></strong>
+                            </p>
+                        </div>
+                        <div class="btnArea">
+                            <button type="button" class="btn blue nm">
+                                <span>등록</span>
+                            </button>
+                            <button type="button" class="btn line2 sm">
+                                <i class="ico down lt"></i>
+                                <span>다운로드</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //titArea -->
+
+                    <!-- rowContainer -->
+                    <div class="rowContainer">
+                        <!-- table -->
+                        <div class="table result cus">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 70px;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 250px;">
+                                    <col style="width: 250px;">
+                                    <col style="width: 120px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">작업번호</th>
+                                        <th scope="col">공문번호</th>
+                                        <th scope="col">신청자명</th>
+                                        <th scope="col">신청구분</th>
+                                        <th scope="col">근거법령</th>
+                                        <th scope="col">시작일자</th>
+                                        <th scope="col">시작시간</th>
+                                        <th scope="col">
+                                            <label for="c01">통보일자</label>
+                                        </th>
+                                        <th scope="col">
+                                            <label for="s01">정상처리</label>
+                                        </th>
+                                        <th scope="col">열람횟수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>12000</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td>소유자명</td>
+                                        <td>형사소송법 제 139조</td>
+                                        <td>2021-04-05</td>
+                                        <td>11:00:30</td>
+                                        <td>
+                                            <div class="flex ct ac">
+                                                <input type="text" id="c01" class="cal" style="width: 138px;">
+                                                <button type="button" class="btnAddressRm"></button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <select id="s01" style="width: 100%;">
+                                                <option>Y</option>
+                                            </select>
+                                        </td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>
+                                            <div class="flex ct ac">
+                                                <span>1121</span>
+                                                <button type="button" class="btnTableSearch rt"></button>
+                                            </div>
+                                        </td>
+                                        <td>수사정보담당관-6023</td>
+                                        <td>경찰청 충청북도경찰청</td>
+                                        <td>등록번호</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>1121</td>
+                                        <td>미발송</td>
+                                        <td>대검찰청</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+
+                    </div>
+                    <!-- //rowContainer -->
+
+                    <div class="pagination">
+                        <button type="button" class="btnFirst"><span class="hidden">맨앞으로</span></button>
+                        <button type="button" class="btnPrev"><span class="hidden">이전페이지</span></button>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <button type="button" class="btnNext"><span class="hidden">다음페이지</span></button>
+                        <button type="button" class="btnLast"><span class="hidden">맨뒤로</span></button>
+                    </div>
+                </section>
+                <!-- //sec -->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">구토지대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장"><span>구토지대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="대장조회">
+                                    <span>대장조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="열람통계">
+                                    <span>열람통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="구토지대장관리">
+                                    <span>구토지대장관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                       <!-- // -->
+                    </li>
+                    <li class="link">
+                        <a href="#" title="대장조회"><span>대장조회</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <!-- 10-06 추가사항요청 추가 : depth -->
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <!-- rowContainer -->
+                    <div class="rowContainer">
+                        <!-- searchResult -->
+                        <div class="searchResult">
+                            <!-- head -->
+                            <div class="head">
+                                <div class="resultCount">
+                                    <p>전체 <strong class="blue">11112</strong>건</p>
+                                </div>
+                                <div class="btnArea">
+                                    <button type="button" class="btnAdvanced"></button>
+                                    <button type="button" class="btnEnroll"></button>
+                                </div>
+                            </div>
+                            <!-- //head -->
+                            <!-- cont -->
+                            <div class="cont">
+                                <!-- 10-13 추가 : bdNone 클래스 (왼쪽,오른쪽 보더가 없는경우) -->
+                                <!-- 10-13 추가 : bdNone 클래스 (왼쪽,오른쪽 보더가 없는경우) -->
+                                <!-- 10-13 추가 : bdNone 클래스 (왼쪽,오른쪽 보더가 없는경우) -->
+                                <!-- table -->
+                                <div class="table cScroll effect bdNone" style="height: 495px;">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: auto;">
+                                            <col style="width: 110px;">
+                                            <col style="width: 100px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">작업번호</th>
+                                                <th scope="row">대장구분</th>
+                                                <th scope="row">문서</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>서울특별시 구로구 오류동 72-10</td>
+                                                <td>토지대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag">부책</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울특별시 구로구 신영동 72-10</td>
+                                                <td>임야대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag peacock">카드</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울특별시 구로구 신영동 72-10</td>
+                                                <td>폐쇄토지대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag peacock">카드</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>서울특별시 구로구 오류동 72-10</td>
+                                                <td class="pos-r">
+                                                    <span>폐쇄토지대장</span>
+                                                    <div class="btnGroup">
+                                                        <button type="button" class="btnAddressEd"></button>
+                                                        <button type="button" class="btnAddressDel"></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag">부책</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울특별시 구로구 오류동 72-10</td>
+                                                <td>토지대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag">부책</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //table -->
+                            </div>
+                            <!-- //cont -->
+                        </div>
+                        <!-- //searchResult -->
+
+                        <!-- mapArea -->
+                        <div class="mapArea">
+                            <!-- toolBar -->
+                            <div class="toolBar scale">
+                                <!-- widget -->
+                                <div class="widget">
+                                    <button type="button" class="btnScaleUp">
+                                        <span class="hidden">확대</span>
+                                    </button>
+                                    <button type="button" class="btnScaleDown">
+                                        <span class="hidden">축소</span>
+                                    </button>
+                                </div>
+                                <!-- //widget -->
+                            </div>
+                            <!-- //toolBar -->
+                            <!-- locInfo : 토지대장 카드 -->
+                            <div class="locInfo" style="width: 454px; right:180px;">
+                                <!-- head -->
+                                <div class="head">
+                                    <button type="button" class="btnClose">
+                                        <span class="hidden">닫기</span>
+                                    </button>
+                                    <div class="flex ac sb">
+                                        <!-- locName -->
+                                        <div class="locName">
+                                            <h3>토지대장</h3>
+                                            <div class="tagGroup">
+                                                <span class="tag peacock">카드</span>
+                                            </div>
+                                        </div>
+                                        <!-- //locName -->
+                                        <!-- direcArea -->
+                                        <div class="direcArea">
+                                            <ul>
+                                                <li class="active">
+                                                    <button type="button" class="btnFront"></button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnBack"></button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnBoth"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //direcArea -->
+                                    </div>
+                                </div>
+                                <!-- //head -->
+                                <!-- cont -->
+                                <div class="cont">
+                                    <!-- infoList -->
+                                    <div class="infoList">
+                                        <ul>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>행정구역</span>
+                                                    </div>
+                                                    <p>서울특별시 구로구 오류동</p>
+                                                </div>
+                                            </li>
+                                            <li class="col2">
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>지번</span>
+                                                    </div>
+                                                    <p>72-10</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>색인번호</span>
+                                                    </div>
+                                                    <p>011553</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>필지번호</span>
+                                                    </div>
+                                                    <p>1153010800200010001</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>건물명</span>
+                                                    </div>
+                                                    <p>이프성수리버하우스</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>동/층/호/실</span>
+                                                    </div>
+                                                    <p>1001동 3층 301호 2실</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //infoList -->
+                                </div>
+                                <!-- //cont -->
+                                <!-- cont -->
+                                <div class="cont bottom">
+                                    <div class="flex ac sb">
+                                        <!-- desc -->
+                                        <div class="desc">
+                                            <!-- locName -->
+                                            <div class="locName">
+                                                <p>등록</p>
+                                                <p>2021-08-02 whtt2001</p>
+                                            </div>
+                                            <!-- //locName -->
+                                            <!-- locName -->
+                                            <div class="locName">
+                                                <p>수정</p>
+                                                <p>2021-08-03 whtt2001</p>
+                                            </div>
+                                            <!-- //locName -->
+                                        </div>
+                                        <!-- //desc -->
+                                        <!-- btnArea -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btnEdit">
+                                                <span class="hidden">수정</span>
+                                            </button>
+                                            <button type="button" class="btnDel">
+                                                <span class="hidden">삭제</span>
+                                            </button>
+                                            <button type="button" class="btnImg">
+                                                <span class="hidden">이미지 조회</span>
+                                            </button>
+                                        </div>
+                                        <!-- //btnArea -->
+                                    </div>
+                                </div>
+                                <!-- //cont -->
+                            </div>
+                            <!-- //locInfo -->
+
+                            <!-- locInfo : 토지대장 부책 -->
+                            <div class="locInfo type02" style="width: 454px; top: 290px; right: 100px;">
+                                <!-- head -->
+                                <div class="head">
+                                    <button type="button" class="btnClose">
+                                        <span class="hidden">닫기</span>
+                                    </button>
+                                    <div class="flex ac sb">
+                                        <!-- locName -->
+                                        <div class="locName">
+                                            <h3>토지대장</h3>
+                                            <div class="tagGroup">
+                                                <span class="tag">부책</span>
+                                            </div>
+                                        </div>
+                                        <!-- //locName -->
+                                        <!-- direcArea -->
+                                        <div class="direcArea">
+                                            <ul>
+                                                <li>
+                                                    <button type="button" class="btnFront"></button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnBack"></button>
+                                                </li>
+                                                <li class="active">
+                                                    <button type="button" class="btnBoth"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //direcArea -->
+                                    </div>
+                                </div>
+                                <!-- //head -->
+                                <!-- cont -->
+                                <div class="cont">
+                                    <!-- infoList -->
+                                    <div class="infoList">
+                                        <ul>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>행정구역</span>
+                                                    </div>
+                                                    <p>서울특별시 구로구 오류동</p>
+                                                </div>
+                                            </li>
+                                            <li class="col2">
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>지번</span>
+                                                    </div>
+                                                    <p>72-10</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>색인번호</span>
+                                                    </div>
+                                                    <p>011553</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>필지번호</span>
+                                                    </div>
+                                                    <p>1153010800200010001</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>건물명</span>
+                                                    </div>
+                                                    <p>이프성수리버하우스</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex ac">
+                                                    <div class="infoTit">
+                                                        <span>동/층/호/실</span>
+                                                    </div>
+                                                    <p>1001동 3층 301호 2실</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //infoList -->
+                                </div>
+                                <!-- //cont -->
+                                <!-- cont -->
+                                <div class="cont bottom">
+                                    <div class="flex ac sb">
+                                        <!-- desc -->
+                                        <div class="desc">
+                                            <!-- locName -->
+                                            <div class="locName">
+                                                <p>등록</p>
+                                                <p>2021-08-02 whtt2001</p>
+                                            </div>
+                                            <!-- //locName -->
+                                            <!-- locName -->
+                                            <div class="locName">
+                                                <p>수정</p>
+                                                <p>2021-08-03 whtt2001</p>
+                                            </div>
+                                            <!-- //locName -->
+                                        </div>
+                                        <!-- //desc -->
+                                        <!-- btnArea -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btnEdit">
+                                                <span class="hidden">수정</span>
+                                            </button>
+                                            <button type="button" class="btnDel">
+                                                <span class="hidden">삭제</span>
+                                            </button>
+                                            <button type="button" class="btnImg">
+                                                <span class="hidden">이미지 조회</span>
+                                            </button>
+                                        </div>
+                                        <!-- //btnArea -->
+                                    </div>
+                                </div>
+                                <!-- //cont -->
+                            </div>
+                            <!-- //locInfo -->
+                            <div class="point grey" style="left: 600px;"></div>
+                            <div class="point"></div>
+                        </div>
+                        <!-- //mapArea -->
+                    </div>
+                    <!-- //rowContainer -->
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

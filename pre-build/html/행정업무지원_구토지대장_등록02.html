@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">구토지대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장"><span>구토지대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="대장조회">
+                                    <span>대장조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="열람통계">
+                                    <span>열람통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="구토지대장관리">
+                                    <span>구토지대장관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장 신청목록"><span>구토지대장 등록</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">구토지대장 등록</h3>
+                    <h2 class="titSec">신청정보</h2>
+                    <!-- table -->
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width:213px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="i01">신청목록</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="i01" value="ㅇㅇ지자체에서 구토지대장 등록 요청" style="width: 100%;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="i02">신청내용</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="i02" value="보유중인 구토지대장 500백건 등록 요청합니다." style="width: 100%;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="r01">등록구분</label>
+                                    </th>
+                                    <td class="txt-left">
+                                         <!-- radioGroup -->
+                                        <div class="radioGroup">
+                                            <div class="radio">
+                                                <input type="radio" id="r01" name="rd" checked>
+                                                <label for="r01">
+                                                    <span>단 건</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="r02" name="rd">
+                                                <label for="r02">
+                                                    <span>여러 건</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- //radioGroup -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="flex ac" style="margin:30px 0 12px;">
+                        <h2 class="titSec">파일첨부</h2>
+                        <p class="colorType blue">※ Zip 파일만 지원합니다.</p>
+                    </div>
+                     <!-- table -->
+                     <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 213px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="f01">첨부파일</label>
+                                    </th>
+                                    <td>
+                                        <!-- fileContainer -->
+                                        <div class="fileContainer sb">
+                                            <!-- fileBox -->
+                                            <div class="fileBox view cScroll" style="width: 88.6%; height: 100px;">
+                                                <!-- row -->
+                                                <div class="row">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk01">
+                                                        <label for="chk01">
+                                                            <a href="#" class="file zip lt">ㅇㅇ지자체 소유 구토지대장.zip</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- //row -->
+                                                <!-- row -->
+                                                <div class="row">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk02">
+                                                        <label for="chk02">
+                                                            <a href="#" class="file zip lt">ㅇㅇ지자체 소유 구토지대장.zip</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- //row -->
+                                                <!-- row -->
+                                                <div class="row">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="chk03">
+                                                        <label for="chk03">
+                                                            <a href="#" class="file zip lt">ㅇㅇ지자체 소유 구토지대장.zip</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- //row -->
+                                            </div>
+                                            <!-- //fileBox -->
+                                            <div class="btnArea">
+                                                <div class="fileArea">
+                                                    <input type="file" id="f01" class="hidden">
+                                                    <label for="f01" class="btn grey">파일첨부</label>
+                                                </div>
+                                                <button type="button" class="btn grey2">
+                                                    <span>삭제</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- //fileContainer -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <!-- txtCont -->
+                    <div class="txtCont type02">
+                        <div class="row">
+                            <strong class="empTxt">&middot; 이미지 파일이름 부여방법</strong>
+                            <p>시도코드(2자리)_시군구코드(3자리)_법정동코드(3가지)_동리코드(2자리)_대장구분(1자리)_본번(4자리)_
+                            부번(4자리)_카드/부책구분(2자리)_이미지앞면/뒷면(2자리)_색인순번(6자리)</p>
+                            <p>예) 46_130_320_24_1_0001_0000_01_01_000001.TIF</p>
+                        </div>
+                        <div class="row">
+                            <strong class="empTxt">&middot; 압축파일 첨부 방법</strong>
+                            <p>예) zip</p>
+                            <!-- inTxt -->
+                            <div class="inTxt">
+                                <p>ㄴ&nbsp;&nbsp;46_130_320_24_1_0001_0000_01_01_000001.TIF</p>
+                                <p>ㄴ&nbsp;&nbsp;46_130_320_24_1_0001_0000_01_01_000001.TIF</p>
+                                <p>ㄴ&nbsp;&nbsp;46_130_320_24_1_0001_0000_01_01_000001.TIF</p>
+                                <p>ㄴ&nbsp;&nbsp;46_130_320_24_1_0001_0000_01_01_000001.TIF</p>
+                                <p>ㄴ&nbsp;&nbsp;46_130_320_24_1_0001_0000_01_01_000001.TIF</p>
+                            </div>
+                            <!-- //inTxt -->
+                        </div>
+                        <div class="row">
+                            <strong class="empTxt">&middot; 색인순번</strong>
+                            <p>zip 번호를 순차적으로 입력합니다. (예) 000001, 000002, 000003, 000004, · · · · · · 000011, 000012) 앞뒤 구분을 위해 뒷면은 필수적으로 앞면의 색인 순번 다음 번호를 기입합니다.</p>
+                        </div>
+                    </div>
+                    <!-- //txtCont -->
+                    <div class="table toggleTable result effect">
+                        <table>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col style="width: auto;">
+                                <col style="width: 160px;">
+                                <col style="width: 160px;">
+                                <col style="width: 160px;">
+                                <col style="width: 160px;">
+                                <col style="width: 160px;">
+                                <col style="width: 160px;">
+                                <col style="width: 350px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">행정구역</th>
+                                    <th scope="col">본번</th>
+                                    <th scope="col">부번</th>
+                                    <th scope="col">대장구분</th>
+                                    <th scope="col">문서구분</th>
+                                    <th scope="col">앞/뒤</th>
+                                    <th scope="col">색인 순번</th>
+                                    <th scope="col">파일명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>0001</td>
+                                    <td>0001</td>
+                                    <td>토지대장</td>
+                                    <td>카드</td>
+                                    <td>앞</td>
+                                    <td>000001</td>
+                                    <td>0000_00_00_000.tif</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>0001</td>
+                                    <td>0001</td>
+                                    <td>토지대장</td>
+                                    <td>카드</td>
+                                    <td>뒤</td>
+                                    <td>000002</td>
+                                    <td>0000_00_00_000.tif</td>
+                                </tr>
+                                <tr class="tgShowHide">
+                                    <td>3</td>
+                                    <td>서울특별시 강남구 대치동</td>
+                                    <td>0001</td>
+                                    <td>0005</td>
+                                    <td>토지대장</td>
+                                    <td>카드</td>
+                                    <td>앞</td>
+                                    <td>000010</td>
+                                    <td>0000_00_00_000.tif</td>
+                                </tr>
+                                <tr class="tgCont" style="display: none;">
+                                    <td colspan="9">
+                                        <!-- toggleBox -->
+                                        <div class="toggleBox">
+                                            <!-- inner -->
+                                            <div class="inner">
+                                                <!-- table -->
+                                                <div class="table tgContTable">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width: 213px;">
+                                                            <col style="width: auto;">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <div class="flex ct">
+                                                                        <label for="chk04">사용여부</label>
+                                                                        <div class="checkbox">
+                                                                            <input type="checkbox" id="chk04">
+                                                                            <label for="chk04"></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="txt-left">
+                                                                    <div class="flex ac">
+                                                                        <div class="row">
+                                                                            <label for="i03">권 수</label>
+                                                                            <input type="text" id="i03" style="width:195px;">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label for="i04">페이지 수</label>
+                                                                            <input type="text" id="i04" style="width: 195px;">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <div class="flex ct">
+                                                                        <label for="chk05">집합건물 여부</label>
+                                                                        <div class="checkbox">
+                                                                            <input type="checkbox" id="chk05">
+                                                                            <label for="chk05"></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="txt-left">
+                                                                    <div class="flex ac">
+                                                                        <div class="row">
+                                                                            <label for="i05">건물 명</label>
+                                                                            <input type="text" id="i05" style="width:195px;">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label for="i06">동</label>
+                                                                            <input type="text" id="i06" style="width: 195px;">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label for="i07">층</label>
+                                                                            <input type="text" id="i07" style="width: 195px;">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label for="i08">호</label>
+                                                                            <input type="text" id="i08" style="width: 195px;">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label for="i09">실</label>
+                                                                            <input type="text" id="i09" style="width: 195px;">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- //table -->
+                                            </div>
+                                            <!-- //inner -->
+                                        </div>
+                                        <!-- //toggleBox -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>서울특별시 강남구 대치동</td>
+                                    <td>0001</td>
+                                    <td>0005</td>
+                                    <td>임야대장</td>
+                                    <td>부책</td>
+                                    <td>앞</td>
+                                    <td>000011</td>
+                                    <td>0000_00_00_000.tif</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btnArea">
+                        <button type="button" class="btn grey lg">
+                            <span>취소</span>
+                        </button>
+                        <button type="button" class="btn blue lg">
+                            <span>요청</span>
+                        </button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

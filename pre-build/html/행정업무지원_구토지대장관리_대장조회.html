@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">구토지대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장"><span>구토지대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="대장조회">
+                                    <span>대장조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="열람통계">
+                                    <span>열람통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="구토지대장관리">
+                                    <span>구토지대장관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="대장조회"><span>대장조회</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <!-- rowContainer -->
+                    <div class="rowContainer">
+                        <!-- searchResult -->
+                        <div class="searchResult">
+                            <!-- head -->
+                            <div class="head">
+                                <div class="resultCount">
+                                    <p>전체 <strong class="blue">11112</strong>건</p>
+                                </div>
+                                <div class="btnArea">
+                                    <button type="button" class="btnAdvanced"></button>
+                                    <button type="button" class="btnEnroll"></button>
+                                </div>
+                            </div>
+                            <!-- //head -->
+                            <!-- cont -->
+                            <div class="cont">
+                                <!-- 10-13 추가 : bdNone 클래스 (왼쪽,오른쪽 보더가 없는경우) -->
+                                <!-- 10-13 추가 : bdNone 클래스 (왼쪽,오른쪽 보더가 없는경우) -->
+                                <!-- 10-13 추가 : bdNone 클래스 (왼쪽,오른쪽 보더가 없는경우) -->
+                                <!-- table -->
+                                <div class="table cScroll effect bdNone" style="height: 495px;">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: auto;">
+                                            <col style="width: 110px;">
+                                            <col style="width: 100px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">작업번호</th>
+                                                <th scope="row">대장구분</th>
+                                                <th scope="row">문서</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>서울특별시 구로구 오류동 72-10</td>
+                                                <td>토지대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag">부책</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울특별시 구로구 신영동 72-10</td>
+                                                <td>임야대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag peacock">카드</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울특별시 구로구 신영동 72-10</td>
+                                                <td>폐쇄토지대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag peacock">카드</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울특별시 구로구 오류동 72-10</td>
+                                                <td class="pos-r">
+                                                    <span>폐쇄토지대장</span>
+                                                    <div class="btnGroup">
+                                                        <button type="button" class="btnAddressEd"></button>
+                                                        <button type="button" class="btnAddressDel"></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag">부책</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울특별시 구로구 오류동 72-10</td>
+                                                <td>토지대장</td>
+                                                <td>
+                                                    <div class="tagGroup flex ct">
+                                                        <span class="tag">부책</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //table -->
+                            </div>
+                            <!-- //cont -->
+                            <!-- searchPopup -->
+                            <div class="searchPopup">
+                                <!-- inner -->
+                                <div class="inner">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- searchName -->
+                                        <div class="searchName">
+                                            <label for="s01">조회구분</label>
+                                            <select id="s01" style="width: 100%;">
+                                                <option>지번조회</option>
+                                                <option>지번범위조회</option>
+                                                <option>법정동전체조회</option>
+                                                <option>신지번조회</option>
+                                                <option>타시군구조회</option>
+                                                <option>타시군구지번범위조회</option>
+                                                <option>타시군구법정동전체조회</option>
+                                                <option>건물명조회</option>
+                                            </select>
+                                        </div>
+                                        <!-- //searchName -->
+                                    </div>
+                                    <!-- //row -->
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- searchName -->
+                                        <div class="searchName">
+                                            <label>문서구분</label>
+                                            <!-- radioGroup -->
+                                            <div class="radioGroup">
+                                                <div class="radio">
+                                                    <input type="radio" id="r01" name="rd">
+                                                    <label for="r01">
+                                                        <span>전체</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="r02" name="rd" checked>
+                                                    <label for="r02">
+                                                        <span>카드</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="r03" name="rd">
+                                                    <label for="r03">
+                                                        <span>부책</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- //radioGroup -->
+                                        </div>
+                                        <!-- //searchName -->
+                                        
+                                    </div>
+                                    <!-- //row -->
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- searchName -->
+                                        <div class="searchName">
+                                            <label for="s02">대장종류</label>
+                                            <select id="s02" style="width: 100%;">
+                                                <option>1-토지대장</option>
+                                                <option>2-임야대장</option>
+                                                <option>8-폐쇄토지대장</option>
+                                                <option>9-폐쇄임야대장</option>
+                                            </select>
+                                        </div>
+                                        <!-- //searchName -->
+                                    </div>
+                                    <!-- //row -->
+
+                                    <!-- row -->
+                                    <div class="row full">
+                                        <div class="searchName">
+                                            <label for="s03">행정구역</label>
+                                        </div>
+                                        <!-- searchList -->
+                                        <div class="searchList">
+                                            <ul>
+                                                <li>
+                                                    <select id="s03">
+                                                        <option>11-서울특별시</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <select id="s04">
+                                                        <option>110-종로구</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <select id="s05">
+                                                        <option>186-신명동</option>
+                                                    </select>
+                                                </li> 
+                                                <li>
+                                                    <select id="s06">
+                                                        <option>동/리</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //searchList -->
+                                    </div>
+                                    <!-- //row -->
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <div class="searchName">
+                                            <label for="i01">지번</label>
+                                            <input type="text" id="i01" value="0072" style="width:78px;">
+                                            <span class="dash">-</span>
+                                            <input type="text" id="i02" value="00100" style="width:78px;">
+                                        </div>
+                                    </div>
+                                    <!-- //row -->
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <div class="searchName">
+                                            <label for="i03">지번범위</label>
+                                            <input type="text" id="i03" value="0072" style="width:78px;">
+                                            <span class="dash">-</span>
+                                            <input type="text" id="i04" value="00100" style="width:78px;">
+                                        </div>
+                                    </div>
+                                    <!-- //row -->
+
+                                    <!-- row -->
+                                    <div class="row list">
+                                        <div class="searchName">
+                                            <label for="i05">건물명</label>
+                                            <input type="text" id="i05" value="생각공장" style="width: 100%;">
+                                        </div>
+                                        <!-- searchList -->
+                                        <div class="searchList">
+                                            <ul>
+                                                <li>
+                                                    <div class="searchName">
+                                                        <label for="i06">동</label>
+                                                        <input type="text" id="i06" value="101">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="searchName">
+                                                        <label for="i07">층</label>
+                                                        <input type="text" id="i07" value="101">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="searchName">
+                                                        <label for="i08">호</label>
+                                                        <input type="text" id="i08" value="101">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="searchName">
+                                                        <label for="i09">실</label>
+                                                        <input type="text" id="i09" value="101">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //searchList -->
+                                    </div>
+                                    <!-- //row -->
+                                    <!-- row -->
+                                    <div class="row chkList">
+                                        <!-- searchList -->
+                                        <div class="searchList">
+                                            <!-- checkbox -->
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="chk01">
+                                                <label for="chk01">
+                                                    <span>공유지 연명부 포함</span>
+                                                </label>
+                                            </div>
+                                            <!-- //checkbox -->
+                                            <!-- checkbox -->
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="chk02">
+                                                <label for="chk02">
+                                                    <span>폐쇄 대장 포함</span>
+                                                </label>
+                                            </div>
+                                            <!-- //checkbox -->
+                                        </div>
+                                        <!-- //searchList -->
+                                    </div>
+                                    <!-- //row -->
+                                    <div class="btnArea">
+                                        <button type="button" class="btn blue lg">
+                                            <span>검색</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- //inner -->
+                            </div>
+                        </div>
+                        <!-- //searchResult -->
+
+                        <!-- mapArea -->
+                        <div class="mapArea" style="background-color: #f9f9f9;">
+                            <div id="mapImg"></div>
+                            <!-- toolBar -->
+                            <div class="toolBar">
+                                <!-- util -->
+                                <div class="util">
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btnMap btnSizeSet">
+                                                <span>화면맞추기</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btnMap btnSize">
+                                                <span>원본사이즈</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //util -->
+                                <!-- controller -->
+                                <div class="controller">
+                                    <button type="button" class="btnMap btnControl">
+                                        <span class="hidden">이동</span>
+                                    </button>
+                                    <button type="button" class="btnMap btnMapSearch">
+                                        <span class="hidden">조회</span>
+                                    </button>
+                                    <button type="button" class="btnMap btnZoomOut">
+                                        <span class="hidden">축소</span>
+                                    </button>
+                                    <button type="button" class="btnMap btnZoomIn">
+                                        <span class="hidden">확대</span>
+                                    </button>
+                                    <button type="button" class="btnMap btnDownload">
+                                        <span class="hidden">다운로드</span>
+                                    </button>
+                                    <button type="button" class="btnMap btnPrint">
+                                        <span class="hidden">출력</span>
+                                    </button>
+                                </div>
+                                <!-- //controller -->
+                            </div>
+                            <!-- //toolBar -->
+                        </div>
+                        <!-- //mapArea -->
+                    </div>
+                    <!-- //rowContainer -->
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

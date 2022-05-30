@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">구토지대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장"><span>구토지대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="대장조회">
+                                    <span>대장조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="열람통계">
+                                    <span>열람통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="구토지대장관리">
+                                    <span>구토지대장관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장 통계"><span>구토지대장 통계</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">구토지대장 통계</h3>
+                    <!-- searchOpt -->
+                    <div class="searchOpt">
+                        <div class="flex">
+                            <div class="col">
+                                <div class="row">
+                                    <!-- inputBox -->
+                                    <div class="inputBox">
+                                        <label for="s01">행정구역</label>
+                                        <select id="s01" style="width: 130px;">
+                                            <option>서울특별시</option>
+                                        </select>
+                                        <select id="s02" style="width: 110px;">
+                                            <option>강남구</option>
+                                        </select>
+                                    </div>
+                                    <!-- //inputBox -->
+                                    <!-- inputBox -->
+                                    <div class="inputBox">
+                                        <label for="s03">타사군에서 발급</label>
+                                        <select id="s03" style="width: 110px;">
+                                            <option>자료포함</option>
+                                        </select>
+                                        <select id="s04" style="width: 130px;">
+                                            <option>열람/발급용</option>
+                                        </select>
+                                    </div>
+                                    <!-- //inputBox -->
+                                    <!-- inputBox -->
+                                    <div class="inputBox">
+                                        <label for="chk01">발급일자</label>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01">
+                                            <label for="chk01"></label>
+                                        </div>
+                                        <input type="text" id="i01" class="cal">
+                                        <span>~</span>
+                                        <input type="text" id="i02" class="cal">
+                                    </div>
+                                    <!-- //inputBox -->
+                                    <!-- inputBox -->
+                                    <div class="inputBox">
+                                        <label for="s05">발급용도</label>
+                                        <!-- 10-05 수정 : select width 130px -> 120px -->
+                                        <!-- 10-05 수정 : select width 130px -> 120px -->
+                                        <!-- 10-05 수정 : select width 130px -> 120px -->
+                                        <select id="s05" style="width: 120px;">
+                                            <option>조회/출력용</option>
+                                        </select>
+                                        <!-- // -->
+                                    </div>
+                                    <!-- //inputBox -->
+                                </div>
+                            </div>
+                            <button type="button" class="btn black">
+                                <span>검색</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //searchOpt -->
+
+                    <!-- tabWrap -->
+                    <div class="tabWrap type02">
+                        <!-- tabNav -->
+                        <div class="tabNav flex sb">
+                            <!-- tabList -->
+                            <ul class="tabList">
+                                <li class="active">
+                                    <a href="#">발급내역통계</a>
+                                </li>
+                                <li>
+                                    <a href="#">용도별통계</a>
+                                </li>
+                            </ul>
+                            <!-- //tabList -->
+                            <button type="button" class="btn line sm">
+                                <i class="ico excel lt"></i>
+                                <span>엑셀 다운로드</span>
+                            </button>
+                        </div>
+                        <!-- //tabNav -->
+                        <!-- tabCont -->
+                        <div class="tabCont active">
+                            <!-- graphArea -->
+                            <div class="graphArea" style="width: 100%; height: 358px; background-color: #f4f5f9;">
+                                차트영역
+                            </div>
+                            <!-- //graphArea -->
+                            <!-- graphArea -->
+                            <div class="graphArea" style="width: 100%; height: 358px; background-color: #f4f5f9;">
+                                그리드영역
+                            </div>
+                            <!-- //graphArea -->
+                        </div>
+                        <!-- //tabCont -->
+                        <!-- tabCont -->
+                        <div class="tabCont">
+                            <!-- graphArea -->
+                            <div class="graphArea" style="width: 100%; height: 358px; background-color: #f4f5f9;">
+                                차트영역
+                            </div>
+                            <!-- //graphArea -->
+                            <!-- graphArea -->
+                            <div class="graphArea" style="width: 100%; height: 358px; background-color: #f4f5f9;">
+                                그리드영역
+                            </div>
+                            <!-- //graphArea -->
+                        </div>
+                        <!-- //tabCont -->
+                    </div>
+                    <!-- //tabWrap -->
+                    <div class="pagination">
+                        <button type="button" class="btnFirst"><span class="hidden">맨앞으로</span></button>
+                        <button type="button" class="btnPrev"><span class="hidden">이전페이지</span></button>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <button type="button" class="btnNext"><span class="hidden">다음페이지</span></button>
+                        <button type="button" class="btnLast"><span class="hidden">맨뒤로</span></button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>

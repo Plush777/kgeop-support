@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<div id="wrap">
+    @@include('include/header.html')
+    <div class="searchArea clearFix">
+        <div class="outerBg">
+          <!--inner-->
+          <div class="inner">
+            <h3 class="titMain">구토지대장</h3>
+          </div>
+          <!--//inner-->
+        </div>
+      </div>
+    <div id="container">
+        <!--leftMenu-->
+        <div id="leftMenu">
+            <button type="button" class="btnLeftMenuToggle"><span class="hidden">보이기/숨기기</span></button>
+            <div class="head">
+                <strong class="tit">Title</strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--//leftMenu-->
+        <!--aside-->
+        <aside class="aside">
+            <ul>
+                <li>
+                    <div class="dep">
+                        <button type="button" class="btnTool rule"><strong><span>운영규정</span></strong></button>
+                        <button type="button" class="btnTool search"><strong><span>행정구역검색</span></strong></button>
+                        <button type="button" class="btnTool age"><strong><span>만나이계산</span></strong></button>
+                        <button type="button" class="btnTool year"><strong><span>년도환산 단기 -&gt; 서기</span></strong></button>
+                        <button type="button" class="btnTool qna"><strong><span>Q&A검색</span></strong></button>
+                        <button type="button" class="btnTool find"><strong><span>구대장조회</span></strong></button>
+                    </div>
+                    <button type="button" class="btnAside setting"><strong><span class="hidden">툴바</span></strong></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside board"><span class="hidden">게시판</span></button>
+                </li>
+                <li>
+                    <button type="button" class="btnAside top"><span class="hidden">맨위로</span></button>
+                </li>
+            </ul>
+        </aside>
+        <!--//aside-->
+        <div id="content">
+            <!--breadcrunb-->
+            <div class="breadcrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="홈으로"><span class="hidden">홈으로</span></a>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장"><span>구토지대장</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        <ul class="dep">
+                            <li>
+                                <a href="#" title="대장조회">
+                                    <span>대장조회</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="열람통계">
+                                    <span>열람통계</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="구토지대장관리">
+                                    <span>구토지대장관리</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <a href="#" title="구토지대장 신청목록"><span>구토지대장 신청목록</span></a>
+                        <button type="button" class="btnBreadMore"><span class="hidden">더보기</span></button>
+                        
+                        <ul class="dep wide">
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="선택">
+                                    <span>선택</span>
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!--//breadcrunb-->
+            <div class="inner">
+                <!--sec-->
+                <section class="sec">
+                    <h3 class="titPage">구토지대장 신청 목록</h3>
+                    <!--searchOpt-->
+                    <div class="searchOpt">
+                        <div class="flex">
+                            <div class="col">
+                                <div class="row">
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="s01">행정구역</label>
+                                        <select id="s01">
+                                            <option>서울특별시</option>
+                                        </select>
+                                        <select id="s02">
+                                            <option>강남구</option>
+                                        </select>
+                                    </div>
+                                    <!--//inputBox-->
+                                    <!--inputBox-->
+                                    <div class="inputBox">
+                                        <label for="s03">검색조건</label>
+                                        <select id="s03">
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" id="i01">
+                                    </div>
+                                    <!--//inputBox-->
+                                </div>
+                             </div>
+                            <button type="button" class="btn black" style="padding: 0 29px;">
+                                <span>검색</span>
+                            </button>
+                        </div>
+                        <div class="flex">
+                            <div class="col">
+                                <div class="row">
+                                    <!-- inputBox -->
+                                    <div class="inputBox">
+                                        <label for="s04">일자 구분</label>
+                                        <select id="s04">
+                                            <option>처리일자</option>
+                                        </select>
+                                        <div class="checkbox">
+                                            <input type="checkbox">
+                                            <label for="chk01"></label>
+                                        </div>
+                                        <div class="calGroup">
+                                            <input type="text" class="cal" id="c01"/>
+                                            <span>~</span>
+                                            <input type="text" class="cal"/>
+                                        </div>
+                                    </div>
+                                    <!-- //inputBox -->
+                                    <!-- inputBox -->
+                                    <div class="inputBox">
+                                        <label for="s05">처리구분</label>
+                                        <select id="s05">
+                                            <option>전체</option>
+                                        </select>
+                                    </div>
+                                    <!-- //inputBox -->
+                                </div>
+                            </div>
+                            <button type="button" class="btn green greenLine">
+                                <i class="ico excelWhite lt"></i>
+                                <span>엑셀</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--//searchOpt-->
+                    <!-- titArea -->
+                    <div class="titArea">
+                        <div class="total">
+                            <p>전체 건수
+                                <strong class="blue">42<span>건</span></strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //titArea -->
+                    <!-- table -->
+                    <div class="table result">
+                        <table>
+                            <colgroup>
+                               <col style="width: 70px;">
+                               <col style="width: 200px;">
+                               <col style="width: 150px;">
+                               <col style="width: 300px;">
+                               <col style="width: 200px;">
+                               <col style="width: auto;">
+                               <col style="width: 150px;">
+                               <col style="width: 200px;">
+                               <col style="width: 110px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">신청 번호</th>
+                                    <th scope="col">신청자 ID</th>
+                                    <th scope="col">신청 제목</th>
+                                    <th scope="col">신청일자</th>
+                                    <th scope="col">행정구역</th>
+                                    <th scope="col">처리구분</th>
+                                    <th scope="col">처리일자</th>
+                                    <th scope="col">처리자 ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                   <td>1</td>
+                                   <td>000000</td>
+                                   <td>user</td>
+                                   <td>(현)행정구역 코드 변동</td>
+                                   <td>2021.06.01</td>
+                                   <td>서울특별시 강남구 논현동</td>
+                                   <td>대기</td>
+                                   <td>2021.06.01</td>
+                                   <td>user</td>
+                               </tr>
+                               <tr>
+                                    <td>2</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>-</td>
+                                    <td>2021.06.01</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>대기</td>
+                                    <td>2021.06.01</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>읍면동 변동</td>
+                                    <td>2021.06.03</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>대기</td>
+                                    <td>2021.06.03</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>-</td>
+                                    <td>2021.06.03</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>대기</td>
+                                    <td>2021.06.03</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>오류 구토지대장</td>
+                                    <td>2021.06.05</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>승인</td>
+                                    <td>2021.06.05</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>-</td>
+                                    <td>2021.06.06</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>승인</td>
+                                    <td>2021.06.06</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>오류 구토지대장</td>
+                                    <td>2021.06.05</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>반려</td>
+                                    <td>2021.06.05</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>-</td>
+                                    <td>2021.06.06</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>승인</td>
+                                    <td>2021.06.06</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>오류 구토지대장</td>
+                                    <td>2021.06.05</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>반려</td>
+                                    <td>2021.06.05</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>000000</td>
+                                    <td>user</td>
+                                    <td>-</td>
+                                    <td>2021.06.06</td>
+                                    <td>서울특별시 강남구 논현동</td>
+                                    <td>반려</td>
+                                    <td>2021.06.06</td>
+                                    <td>user</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                    <div class="pagination">
+                        <button type="button" class="btnFirst"><span class="hidden">맨앞으로</span></button>
+                        <button type="button" class="btnPrev"><span class="hidden">이전페이지</span></button>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <button type="button" class="btnNext"><span class="hidden">다음페이지</span></button>
+                        <button type="button" class="btnLast"><span class="hidden">맨뒤로</span></button>
+                    </div>
+                </section>
+                <!--//sec-->
+            </div>
+        </div>
+        @@include('include/footer.html')
+    </div>
+</div>
+</body>
+</html>
